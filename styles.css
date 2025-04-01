@@ -90,7 +90,7 @@ body {
 
 /* Khi sidebar bị ẩn, thu nhỏ lại và không hiển thị các mục bên trong */
 .sidebar.hidden {
-  width: 68px;
+  width: 65px;
 }
 
 .sidebar.hidden ul {
