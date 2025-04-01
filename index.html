@@ -7,19 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <ul>
-         <li><a href="https://nlg-96.github.io" class="home-button">OBGYN</a></li>
-        <li><a href="sany4/tbl4.html">TBL 4</a></li> <!-- Đường dẫn tới tbl4.html trong thư mục sany4 -->
-        <li><a href="sany6/tbl6.html">TBL 6</a></li> <!-- Đường dẫn tới tbl6.html trong thư mục sany6 -->
-        <li><a href="irat/irat.html">IRAT</a></li> <!-- Đường dẫn tới irat.html trong thư mục irat -->
-        <li><a href="case/cls.html">Case lâm sàng</a></li> <!-- Đường dẫn tới cls.html trong thư mục case -->
-      </ul>
-    </div>
-    <div class="content">
-      <p>Chào mừng bạn đến với Task-based Learning Sản Phụ Khoa!</p>
-    </div>
+  <!-- Sidebar với nút ☰ -->
+  <div class="sidebar">
+    <button id="toggleSidebarBtn" class="toggle-sidebar-btn">☰</button>
+    <ul>
+      <li><a href="index.html" class="home-button">OBGYN</a></li>
+      <li><a href="sany4/tbl4.html">TBL 4</a></li>
+      <li><a href="sany6/tbl6.html">TBL 6</a></li>
+      <li><a href="irat/irat.html">IRAT</a></li>
+      <li><a href="case/cls.html">Case lâm sàng</a></li>
+    </ul>
+  </div>
+
+  <!-- Nội dung chính -->
+  <div class="content">
+    <p>Chào mừng bạn đến với Task-based Learning Sản Phụ Khoa!</p>
+  </div>
+
+  <!-- Nút popup Facebook -->
+  <div class="fb-popup">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" class="fb-icon">
+    </a>
   </div>
 
   <script src="scripts.js"></script>
