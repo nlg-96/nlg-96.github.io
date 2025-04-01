@@ -1,0 +1,1157 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_90526">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1068">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="20">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492452567210"> <span id="Clock_1"> 0:19:58</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/7_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_90526</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/7_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12537" id="anchor12537"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12537" value="1">
+    Người nữ trưởng thành sử dụng các noãn nguyên bào có tại buồng trứng của họ ra sao?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12537" id="C12537" value="1" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ thoái hóa và chịu chết theo chương trình  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12537" id="C12537" value="2" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ phân chia nguyên nhiễm để bảo tồn số lượng 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12537" id="C12537" value="3" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ tham gia vào tiến trình sinh giao tử
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12537" id="C12537" value="4" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ đi đến cùng để trở thành giao tử
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12538" id="anchor12538"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12538" value="1">
+    Người nam trưởng thành sử dụng các tinh nguyên bào có tại tinh hoàn của họ ra sao?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12538" id="C12538" value="1" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ thoái hóa và chịu chết theo chương trình
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12538" id="C12538" value="2" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ phân chia nguyên nhiễm để bảo tồn số lượng   
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12538" id="C12538" value="3" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ tham gia vào tiến trình sinh giao tử
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12538" id="C12538" value="4" ng-click="checkKetQua($event);">
+         Phần lớn các tế bào này sẽ đi đến cùng để trở thành giao tử
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12539" id="anchor12539"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12539" value="1">
+    Feedback dương của E2 xảy ra khi thoả một số điều kiện xác định. Chúng thể hiện sự kiện gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12539" id="C12539" value="1" ng-click="checkKetQua($event);">
+         Có một nang noãn đã được chọn lọc từ các nang noãn đang phát triển 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12539" id="C12539" value="2" ng-click="checkKetQua($event);">
+         Có một nang noãn đang phát triển từ các nang đã được chiêu mộ
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12539" id="C12539" value="3" ng-click="checkKetQua($event);">
+         Có một nang noãn với đủ số lượng tế bào hạt và đang phát triển ổn định  
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12539" id="C12539" value="4" ng-click="checkKetQua($event);">
+         Có một nang noãn đã được chiêu mộ vào chu kỳ buồng trứng
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12540" id="anchor12540"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12540" value="1">
+    Feedback của progesterone có vai trò gì trong sinh lý chu kỳ buồng trứng?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12540" id="C12540" value="1" ng-click="checkKetQua($event);">
+         Tiêu huỷ hoàng thể  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12540" id="C12540" value="2" ng-click="checkKetQua($event);">
+         Củng cố hoàng thể 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12540" id="C12540" value="3" ng-click="checkKetQua($event);">
+         Duy trì hoàng thể 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12540" id="C12540" value="4" ng-click="checkKetQua($event);">
+         Tạo lập hoàng thể
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12541" id="anchor12541"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12541" value="1">
+    Tác động qua gien của steroid sinh dục dẫn đến kết cục gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12541" id="C12541" value="1" ng-click="checkKetQua($event);">
+         Cả điều hoà lên (up regulation) lẫn điều hoà xuống (down regulation) các gien thuộc cơ quan đích  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12541" id="C12541" value="2" ng-click="checkKetQua($event);">
+         Điều hoà lên các gien thuộc cơ quan đích
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12541" id="C12541" value="3" ng-click="checkKetQua($event);">
+         Điều hoà xuống các gien thuộc cơ quan đích
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12541" id="C12541" value="4" ng-click="checkKetQua($event);">
+         Khởi động dòng thác các phản ứng bào tương thông qua cAMP  
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12542" id="anchor12542"></a>
+	<b>6</b>
+    </td><td>
+    <input type="hidden" name="T12542" value="1">
+    Nếu tiêm trực tiếp một tinh tử tròn vào bào tương noãn bào II, ta sẽ quan sát thấy điều gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12542" id="C12542" value="1" ng-click="checkKetQua($event);">
+         Noãn bào sẽ tống xuất cực cầu II, thành lập tiền nhân cái nhưng không hình thành tiền nhân đực. Không thụ tinh
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12542" id="C12542" value="2" ng-click="checkKetQua($event);">
+         Noãn bào sẽ không tống xuất được cực cầu II, và cũng không hình thành được tiền nhân đực. Không thụ tinh 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12542" id="C12542" value="3" ng-click="checkKetQua($event);">
+         Noãn bào sẽ tống xuất cực cầu II, thành lập tiền nhân cái và hình thành 2 tiền nhân đực, tạo hợp tử tam bội 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12542" id="C12542" value="4" ng-click="checkKetQua($event);">
+         Noãn bào sẽ tống xuất cực cầu II, thành lập tiền nhân cái và hình thành 1 tiền nhân đực, tạo hợp tử lưỡng bội  
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12543" id="anchor12543"></a>
+	<b>7</b>
+    </td><td>
+    <input type="hidden" name="T12543" value="1">
+    Cửa sổ làm tổ được mở ra dưới điều kiện nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12543" id="C12543" value="1" ng-click="checkKetQua($event);">
+         Nội mạc tử cung tiếp xúc và chịu tác động của LIF, EGF, GF từ phôi đã thoát màng 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12543" id="C12543" value="2" ng-click="checkKetQua($event);">
+         Nội mạc tử cung tiếp xúc và chịu tác động của human Chorionic Gonadotrophin
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12543" id="C12543" value="3" ng-click="checkKetQua($event);">
+         Nội mạc tử cung được phơi bày dưới nồng độ đủ cao và đủ dài của progesterone  
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12543" id="C12543" value="4" ng-click="checkKetQua($event);">
+         Nội mạc tử cung được phơi bày dưới nồng độ đủ cao và đủ dài của estradiol
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12544" id="anchor12544"></a>
+	<b>8</b>
+    </td><td>
+    <input type="hidden" name="T12544" value="1">
+    Trong điều kiện thai kỳ bình thường, cơ thể mẹ phản ứng ra sao với sự hiện diện của phôi?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12544" id="C12544" value="1" ng-click="checkKetQua($event);">
+         Có đáp ứng miễn dịch tế bào với ưu thế của T helper cell 1
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12544" id="C12544" value="2" ng-click="checkKetQua($event);">
+         Có đáp ứng miễn dịch tế bào với ưu thế của T helper cell 2  
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12544" id="C12544" value="3" ng-click="checkKetQua($event);">
+         Có sự tăng cường miễn dịch dịch thể với kháng nguyên phôi 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12544" id="C12544" value="4" ng-click="checkKetQua($event);">
+         Có hiện tượng ức chế miễn dịch dịch thể với kháng nguyên phôi
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12545" id="anchor12545"></a>
+	<b>9</b>
+    </td><td>
+    <input type="hidden" name="T12545" value="1">
+    Anti Mullerian Hormone (AMH) có vai trò gì trong sinh lý chu kỳ buồng trứng?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12545" id="C12545" value="1" ng-click="checkKetQua($event);">
+         Là một trong các nội tiết của buồng trứng có tác động lên các cơ quan thuộc hệ Mullerian 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12545" id="C12545" value="2" ng-click="checkKetQua($event);">
+         Là một trong các nội tiết của buồng trứng có tác động lên các cơ quan thuộc tầng trên
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12545" id="C12545" value="3" ng-click="checkKetQua($event);">
+         Là một nội tiết của các nang noãn tiền hốc, tác động lên lẫn nhau để có thể được chiêu mộ  
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12545" id="C12545" value="4" ng-click="checkKetQua($event);">
+         Là một nội tiết giúp cho điều hoà sự phát triển và chọn lọc của noãn nang sau chiêu mộ
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12546" id="anchor12546"></a>
+	<b>10</b>
+    </td><td>
+    <input type="hidden" name="T12546" value="1">
+    Inhibin B có vai trò gì trong sinh lý chu kỳ buồng trứng?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12546" id="C12546" value="1" ng-click="checkKetQua($event);">
+         Là một trong các nội tiết của buồng trứng có tác động lên các cơ quan thuộc hệ Mullerian
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12546" id="C12546" value="2" ng-click="checkKetQua($event);">
+         Là một trong các nội tiết của buồng trứng có tác động lên các cơ quan thuộc tầng trên  
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12546" id="C12546" value="3" ng-click="checkKetQua($event);">
+         Là một nội tiết của các nang noãn tiền hốc tác động lên lẫn nhau để có thể được chọn lọc
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12546" id="C12546" value="4" ng-click="checkKetQua($event);">
+         Là một nội tiết của các nang noãn có hốc tác động lên lẫn nhau để có thể được chọn lọc
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13343" id="anchor13343"></a>
+	<b>11</b>
+    </td><td>
+    <input type="hidden" name="T13343" value="1">
+    Trong các đối tượng sau, kết quả định lượng nồng độ Inhibin B là cao nhất ở đối tượng nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13343" id="C13343" value="1" ng-click="checkKetQua($event);">
+         Phụ nữ đã mãn kinh
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13343" id="C13343" value="2" ng-click="checkKetQua($event);">
+         Phụ nữ tiền mãn kinh
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13343" id="C13343" value="3" ng-click="checkKetQua($event);">
+         Trẻ gái đã qua dậy thì
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13343" id="C13343" value="4" ng-click="checkKetQua($event);">
+         Trẻ gái vừa mới sinh
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13344" id="anchor13344"></a>
+	<b>12</b>
+    </td><td>
+    <input type="hidden" name="T13344" value="1">
+    Nồng độ AMH biến thiên ra sao theo chu kỳ kinh nguyệt?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13344" id="C13344" value="1" ng-click="checkKetQua($event);">
+         Nồng độ AMH là bất biến trong một chu kỳ kinh, cũng như là bất biến trong nhiều chu kỳ kinh liền kề
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13344" id="C13344" value="2" ng-click="checkKetQua($event);">
+         Nồng độ AMH là bất biến trong một chu kỳ kinh, nhưng lại thay đổi qua các chu kỳ kinh liền kề
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13344" id="C13344" value="3" ng-click="checkKetQua($event);">
+         Nồng độ AMH thay đổi theo từng giai đoạn của chu kỳ kinh, theo sự phát triển của noãn nang
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13344" id="C13344" value="4" ng-click="checkKetQua($event);">
+         Nồng độ AMH thay đổi tùy theo nồng độ của các gonadotropin tuyến yên chu kỳ kiểm soát buồng trứng
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13345" id="anchor13345"></a>
+	<b>13</b>
+    </td><td>
+    <input type="hidden" name="T13345" value="1">
+    Trong thực hành, người ta có thể ngăn không cho xuất hiện đỉnh LH bằng cách nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13345" id="C13345" value="1" ng-click="checkKetQua($event);">
+         Dùng một liều cao và duy nhất của GnRH 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13345" id="C13345" value="2" ng-click="checkKetQua($event);">
+         Dùng human Chorionic Gonadotropin
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13345" id="C13345" value="3" ng-click="checkKetQua($event);">
+         Dùng chất tác động lên thụ thể progesterone hạ đồi
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13345" id="C13345" value="4" ng-click="checkKetQua($event);">
+         Cả ba chất trên cùng có thể ngăn đỉnh LH
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13346" id="anchor13346"></a>
+	<b>14</b>
+    </td><td>
+    <input type="hidden" name="T13346" value="1">
+    Trong các cặp tác động sau, cặp nào là các tác động không qua gene của steroid sinh dục?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13346" id="C13346" value="1" ng-click="checkKetQua($event);">
+         Estrogen nội mạc tử cung phát triển, còn progesterone gây hiện tượng phân tiết nội mạc tử cung 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13346" id="C13346" value="2" ng-click="checkKetQua($event);">
+         Estrogen làm cơ tử cung và vòi Fallope co thắt, còn progesterone làm thư giãn các cấu trúc này
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13346" id="C13346" value="3" ng-click="checkKetQua($event);">
+         Estrogen làm chất nhầy cổ tử cung nhiều, trong và loãng, còn progesterone lại làm đặc chất nhầy 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13346" id="C13346" value="4" ng-click="checkKetQua($event);">
+         Estrogen làm phát triển các ống tuyến sữa tại vú, còn progesterone lại tác động trên nang tuyến sữa
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13347" id="anchor13347"></a>
+	<b>15</b>
+    </td><td>
+    <input type="hidden" name="T13347" value="1">
+    Nếu tiêm tế bào dòng tinh vào trong tế bào noãn, sẽ có thụ tinh trong trường hợp nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13347" id="C13347" value="1" ng-click="checkKetQua($event);">
+         Tiêm tinh tử chưa trưởng thành vào noãn bào ở metaphase II của meiosis
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13347" id="C13347" value="2" ng-click="checkKetQua($event);">
+         Tiêm tinh trùng trưởng thành vào noãn bào ở phân bào I của meiosis
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13347" id="C13347" value="3" ng-click="checkKetQua($event);">
+         Tiêm tinh nguyên bào vào noãn bào ở metaphase II của meiosis
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13347" id="C13347" value="4" ng-click="checkKetQua($event);">
+         Tiêm tinh trùng trưởng thành vào noãn nguyên bào đã bắt đầu meiosis
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13348" id="anchor13348"></a>
+	<b>16</b>
+    </td><td>
+    <input type="hidden" name="T13348" value="1">
+    Hành động nào có thể làm di dời cửa sổ làm tổ, làm nó được mở ở thời điểm không thích hợp?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13348" id="C13348" value="1" ng-click="checkKetQua($event);">
+         Dùng thêm estrogen ngoại sinh trong pha noãn
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13348" id="C13348" value="2" ng-click="checkKetQua($event);">
+         Dùng thêm estrogen ngoại sinh trong pha hoàng thể 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13348" id="C13348" value="3" ng-click="checkKetQua($event);">
+         Dùng thêm progesterone ngoại sinh trong pha hoàng thể 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13348" id="C13348" value="4" ng-click="checkKetQua($event);">
+         Dùng thêm progesterone ngoại sinh trong pha noãn
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13349" id="anchor13349"></a>
+	<b>17</b>
+    </td><td>
+    <input type="hidden" name="T13349" value="1">
+    Yếu tố nào tạo điều kiện thuận lợi cho sự làm tổ của một trứng đã thụ tinh?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13349" id="C13349" value="1" ng-click="checkKetQua($event);">
+         Nồng độ progesterone tăng cao sớm trước khi phóng noãn, nguồn gốc nội sinh hay ngoại sinh 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13349" id="C13349" value="2" ng-click="checkKetQua($event);">
+         Đáp ứng miễn dịch qua trung gian tế bào, với chiều hướng ưu thế của các Th 2 so với các Th 1
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13349" id="C13349" value="3" ng-click="checkKetQua($event);">
+         Nồng độ E2 cao khi kích thích buồng trứng làm tăng E2 nội sinh, hay khi dùng E2 ngoại sinh 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13349" id="C13349" value="4" ng-click="checkKetQua($event);">
+         Cả ba tình trạng trên cùng có thể tạo thuận lợi cho tiến trình làm tổ của trứng đã thụ tinh 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13350" id="anchor13350"></a>
+	<b>18</b>
+    </td><td>
+    <input type="hidden" name="T13350" value="1">
+    Nếu cần thực hiện khảo sát di truyền tiền làm tổ, thì sinh thiết phôi nên được thực hiện ra sao?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13350" id="C13350" value="1" ng-click="checkKetQua($event);">
+         Sinh thiết tế bào của phôi ngày 2
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13350" id="C13350" value="2" ng-click="checkKetQua($event);">
+         Sinh thiết tế bào của phôi ngày 3
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13350" id="C13350" value="3" ng-click="checkKetQua($event);">
+         Sinh thiết tế bào ngoại bì lá nuôi
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13350" id="C13350" value="4" ng-click="checkKetQua($event);">
+         Sinh thiết tế bào khối inner cell mass 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13351" id="anchor13351"></a>
+	<b>19</b>
+    </td><td>
+    <input type="hidden" name="T13351" value="1">
+    Đặc tính chế tiết của loại hormone nào đóng vai trò quan trọng nhất trong phát khởi các thay đổi sinh lý và bệnh lý của hoạt động trục hạ đồi-yên-buồng trứng ở tuổi dậy thì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13351" id="C13351" value="1" ng-click="checkKetQua($event);">
+         Progesterone 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13351" id="C13351" value="2" ng-click="checkKetQua($event);">
+         Luteinizing Hormone 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13351" id="C13351" value="3" ng-click="checkKetQua($event);">
+         Follicle Stimulating Hormone
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13351" id="C13351" value="4" ng-click="checkKetQua($event);">
+         Gonadotropin Releasing Hormone  
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13352" id="anchor13352"></a>
+	<b>20</b>
+    </td><td>
+    <input type="hidden" name="T13352" value="1">
+    Thiếu hụt trong sản xuất loại hormone nào là nguyên nhân sâu xa gây ra các thay đổi về sinh lý của hoạt động trục hạ đồi-yên-buồng trứng ở người phụ nữ ở độ tuổi tiền mãn kinh?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13352" id="C13352" value="1" ng-click="checkKetQua($event);">
+         Estradiol
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13352" id="C13352" value="2" ng-click="checkKetQua($event);">
+         Progesterone
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13352" id="C13352" value="3" ng-click="checkKetQua($event);">
+         Inhibin B
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13352" id="C13352" value="4" ng-click="checkKetQua($event);">
+         Anti Mullerian Hormone
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 715px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12537" id="div12537" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12537&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12537_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12537_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12537_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12537_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12537_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12537_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12537_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12537_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12537">0</div>
+    <input type="hidden" value="4" id="DC12537">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12538" id="div12538" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12538&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12538_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12538_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12538_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12538_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12538_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12538_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12538_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12538_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12538">0</div>
+    <input type="hidden" value="4" id="DC12538">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12539" id="div12539" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12539&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12539_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12539_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12539_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12539_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12539_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12539_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12539_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12539_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12539">0</div>
+    <input type="hidden" value="4" id="DC12539">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12540" id="div12540" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12540&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12540_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12540_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12540_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12540_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12540_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12540_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12540_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12540_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12540">0</div>
+    <input type="hidden" value="4" id="DC12540">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12541" id="div12541" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12541&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12541_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12541_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12541_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12541_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12541_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12541_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12541_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12541_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12541">0</div>
+    <input type="hidden" value="4" id="DC12541">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12542" id="div12542" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12542&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C6</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12542_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12542_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12542_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12542_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12542_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12542_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12542_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12542_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12542">0</div>
+    <input type="hidden" value="4" id="DC12542">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12543" id="div12543" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12543&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C7</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12543_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12543_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12543_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12543_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12543_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12543_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12543_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12543_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12543">0</div>
+    <input type="hidden" value="4" id="DC12543">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12544" id="div12544" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12544&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C8</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12544_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12544_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12544_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12544_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12544_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12544_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12544_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12544_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12544">0</div>
+    <input type="hidden" value="4" id="DC12544">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12545" id="div12545" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12545&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C9</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12545_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12545_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12545_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12545_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12545_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12545_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12545_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12545_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12545">0</div>
+    <input type="hidden" value="4" id="DC12545">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12546" id="div12546" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12546&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C10</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12546_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12546_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12546_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12546_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12546_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12546_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12546_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12546_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12546">0</div>
+    <input type="hidden" value="4" id="DC12546">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13343" id="div13343" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13343&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C11</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13343_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13343_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13343_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13343_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13343_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13343_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13343_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13343_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13343">0</div>
+    <input type="hidden" value="4" id="DC13343">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13344" id="div13344" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13344&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C12</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13344_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13344_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13344_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13344_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13344_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13344_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13344_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13344_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13344">0</div>
+    <input type="hidden" value="4" id="DC13344">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13345" id="div13345" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13345&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C13</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13345_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13345_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13345_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13345_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13345_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13345_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13345_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13345_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13345">0</div>
+    <input type="hidden" value="4" id="DC13345">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13346" id="div13346" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13346&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C14</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13346_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13346_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13346_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13346_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13346_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13346_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13346_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13346_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13346">0</div>
+    <input type="hidden" value="4" id="DC13346">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13347" id="div13347" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13347&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C15</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13347_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13347_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13347_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13347_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13347_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13347_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13347_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13347_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13347">0</div>
+    <input type="hidden" value="4" id="DC13347">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13348" id="div13348" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13348&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C16</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13348_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13348_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13348_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13348_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13348_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13348_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13348_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13348_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13348">0</div>
+    <input type="hidden" value="4" id="DC13348">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13349" id="div13349" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13349&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C17</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13349_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13349_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13349_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13349_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13349_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13349_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13349_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13349_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13349">0</div>
+    <input type="hidden" value="4" id="DC13349">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13350" id="div13350" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13350&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C18</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13350_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13350_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13350_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13350_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13350_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13350_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13350_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13350_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13350">0</div>
+    <input type="hidden" value="4" id="DC13350">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13351" id="div13351" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13351&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C19</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13351_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13351_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13351_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13351_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13351_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13351_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13351_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13351_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13351">0</div>
+    <input type="hidden" value="4" id="DC13351">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13352" id="div13352" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13352&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C20</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13352_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13352_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13352_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13352_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13352_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13352_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13352_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13352_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13352">0</div>
+    <input type="hidden" value="4" id="DC13352">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

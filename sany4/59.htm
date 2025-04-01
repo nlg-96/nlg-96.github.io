@@ -1,0 +1,538 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1105">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="120">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453135144"> <span id="Clock_1"> 1:59:57</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/59_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/59_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12915" id="anchor12915"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12915" value="1">
+    TÌNH HUỐNG 1: TEST BÁN ĐỊNH LƯỢNG ĐƯỜNG NIỆU BẰNG QUE NHÚNG <br>
+Bà A. 28 tuổi, PARA 0000, đến khám thai lần đầu tiên trong thai kỳ.<br>
+Các dữ kiện lâm sàng và sinh trắc xác nhận tuổi thai là 12 tuần vô kinh.<br>
+Bà A. cao 160 cm, trước có thai nặng 50 kg. Không tiền sử cá nhân và gia đình đặc biệt.<br>
+Test nước tiểu bằng que nhúng (dip-stick) cho kết quả dương tính [+] với đường.<br> 
+Hãy nhận định về tình trạng đường niệu của bà A.<br>
+Hướng giải quyết vấn đề của bạn?<br>
+Chọn 2 câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12915" id="C12915" value="1" ng-click="checkKetQua($event);">
+         Tình trạng đường niệu ở bà A. nhiều khả năng là hiện tượng sinh lý trong thai kỳ
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12915" id="C12915" value="2" ng-click="checkKetQua($event);">
+         Tình trạng đường niệu ở bà A. nhiều khả năng là dấu hiệu bất thường
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12915" id="C12915" value="3" ng-click="checkKetQua($event);">
+         Chờ đến thời điểm thai được 24 tuần, thực hiện test 75 gram khi thai được 24 tuần
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12915" id="C12915" value="4" ng-click="checkKetQua($event);">
+         Thực hiện ngay test đường huyết đói và sau ăn
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12915" id="C12915" value="5" ng-click="checkKetQua($event);">
+         Thực hiện ngay test 50 gram nếu bất thường sẽ làm test 100 gram
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12915" id="C12915" value="6" ng-click="checkKetQua($event);">
+         Thực hiện ngay test 75 gram
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12915" id="C12915" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12916" id="anchor12916"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12916" value="1">
+    TÌNH HUỐNG 2: 75 gr ORAL GLUCOSE TOLERANCE TEST<br>
+Bà B. 26 tuổi, PARA 0000, hiện đang có thai 27 tuần vô kinh.<br>
+Gia đình có mẹ ruột bị đái tháo đường type 2. Chị ruột của bà B. cũng đã từng được chẩn đoán là đái tháo đường thai kỳ trong cả 2 lần mang thai.<br>
+Do có yếu tố nguy cơ, nên bà ta được thực hiện OGTT 75 gram lúc 12 tuần vô kinh, với kết quả âm tính.<br>
+Bà B. cao 160 cm, trước có thai bà cân 50 kg. Lúc 12 tuần, bà ta cân 49 kg. Hôm nay, bà B cân nặng 62 kg.<br>
+Các lần siêu âm khác nhau ghi nhận kết quả sinh trắc ở 50 th percentile lúc 16 tuần, 50 th percentile lúc 22 tuần, 75 th percentile lúc 27 tuần.<br>
+AFI hôm nay 16 cm.<br>
+Hãy nhận định về tình trạng của bà B.<br>
+Hướng giải quyết vấn đề của bạn?<br>
+Chọn 2 câu đúng. 
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12916" id="C12916" value="1" ng-click="checkKetQua($event);">
+         Thai kỳ bình thường. 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12916" id="C12916" value="2" ng-click="checkKetQua($event);">
+         Thai kỳ có thể có GDM
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12916" id="C12916" value="3" ng-click="checkKetQua($event);">
+         Thai kỳ đã xác định GDM
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12916" id="C12916" value="4" ng-click="checkKetQua($event);">
+         Định lượng glycemia đói và sau ăn
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12916" id="C12916" value="5" ng-click="checkKetQua($event);">
+         Thực hiện lại OGTT 75 gr hôm nay
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12916" id="C12916" value="6" ng-click="checkKetQua($event);">
+          Thực hiện MNT ngay
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12916" id="C12916" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12917" id="anchor12917"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12917" value="1">
+    TÌNH HUỐNG 3: METFORMIN vs INSULIN<br>
+Hội chứng buồng trứng đa nang là một tình trạng rối loạn phóng noãn có kèm theo rối loạn chuyển hóa carbohydrate.<br>
+Nếu bệnh nhân hiếm muộn do hội chứng buồng trứng đa nang có kèm theo béo phì thì điều trị đầu tay là tiết chế, giảm 
+cân.<br>
+Metformin ñược chỉ định khi có thêm kết quả OGTT 75 gram dương tính.<br>
+Bà C. 26 tuổi, PARA 0000, là một bệnh nhân hiếm muộn do hội chứng buồng trứng đa nang, vừa được điều trị thành 
+công với tiết chế, giảm cân và metformin.<br>
+Bà ta vừa được xác định có thai, tuổi thai hiện đang là 8 tuần vô kinh.<br>
+Hiện tại kết quả glycemia đói cho kết quả bình thường.<br>
+Bà ta cần phải được chăm sóc tiếp tục ra sao ở thời điểm hiện tại?<br>
+Hãy chọn 2 câu đúng
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12917" id="C12917" value="1" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, không có chỉ định thực hiện test chẩn đoán GDM
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12917" id="C12917" value="2" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, cần thực hiện đường huyết đói và sau ăn 2 giờ
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12917" id="C12917" value="3" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, cần thực hiện ngay OGTT 75 gram
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12917" id="C12917" value="4" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, cần ngưng metformin. Khi thai đã lớn sẽ dùng lại thuốc hạ đường huyết nếu cần
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12917" id="C12917" value="5" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, cần duy trì metformin
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12917" id="C12917" value="6" ng-click="checkKetQua($event);">
+         Ở thời điểm hiện tại, cần ngưng metformin, chuyển sang điều trị insulin
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12917" id="C12917" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12918" id="anchor12918"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12918" value="1">
+    TÌNH HUỐNG 4: MEDICAL NUTRITION THERAPY<br>
+Bà D. 28 tuổi, cao 150 cm, đang mang thai, tuổi thai hiện tại là 32 tuần vô kinh.<br>
+Lúc thai 24 tuần, bà D. đã được xác định có GDM do test OGTT 75 gram dương tính.<br>
+Bà đang thực hiện MNT theo yêu cầu của bạn. Trước mang thai bà D. cân nặng 47 kg.<br>
+Kết quả theo dõi từ lúc thai 24 tuần đến nay được trình bày trong bảng.<br>
+<img width="1156" border="0px" align="" alt="" style="width:90vw; height:auto;" src="sany4/59_files/461.jpg"><br>
+Bảng theo dõi đường huyết của bà D.<br>
+Hãy kết luận về tình trạng của bà D.<br>
+Chọn 3 câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12918" id="C12918" value="1" ng-click="checkKetQua($event);">
+         Kết quả các test đường là bình thường
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12918" id="C12918" value="2" ng-click="checkKetQua($event);">
+         Kết quả các test đường là bất thường
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12918" id="C12918" value="3" ng-click="checkKetQua($event);">
+         MNT có hiệu quả
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12918" id="C12918" value="4" ng-click="checkKetQua($event);">
+         MNT không hiệu quả
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12918" id="C12918" value="5" ng-click="checkKetQua($event);">
+         Không có chỉ định dùng insulin
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12918" id="C12918" value="6" ng-click="checkKetQua($event);">
+         Đã có chỉ định dùng insulin
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12918" id="C12918" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12919" id="anchor12919"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12919" value="1">
+    TÌNH HUỐNG 5: THỰC ĐƠN CHO THAI PHỤ CÓ GDM<br> 
+Bà E. đang được đề nghị thực hiện MNT vì GDM.<br>
+Bà E. đến tái khám theo hẹn. 
+Khi được hỏi, bà ta cung cấp chi tiết về các bữa ăn mà bà đã thực hiện trong 2 tuần qua.<br>
+<img width="1156" border="0px" align="" alt="" style="width:90vw; height:auto;" src="sany4/59_files/462.jpg"><br>
+Thực đơn tổng quát của bà E.<br>
+Hãy nhận xét về cách thực hiện MNT của bà E.<br>
+Hãy chọn 3 câu đúng. 
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12919" id="C12919" value="1" ng-click="checkKetQua($event);">
+         Phân phối các bữa ăn đúng 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12919" id="C12919" value="2" ng-click="checkKetQua($event);">
+         Phân phối các bữa ăn không tốt, cần sửa chữa 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12919" id="C12919" value="3" ng-click="checkKetQua($event);">
+         Chọn món ăn thích hợp 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12919" id="C12919" value="4" ng-click="checkKetQua($event);">
+         Có những món ăn lẽ ra không nên dùng 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12919" id="C12919" value="5" ng-click="checkKetQua($event);">
+         Đáp ứng đúng nhu cầu carbohydrate 
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12919" id="C12919" value="6" ng-click="checkKetQua($event);">
+         Cung cấp carbohydrate không thích hợp với yêu cầu của MNT
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12919" id="C12919" value="7" ng-click="checkKetQua($event);">
+          
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 265px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12915" id="div12915" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12915&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12915_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12915_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12915_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12915_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12915_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12915_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12915_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12915_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12915">0</div>
+    <input type="hidden" value="4" id="DC12915">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12916" id="div12916" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12916&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12916_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12916_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12916_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12916_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12916_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12916_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12916_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12916_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12916">0</div>
+    <input type="hidden" value="4" id="DC12916">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12917" id="div12917" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12917&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12917_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12917_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12917_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12917_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12917_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12917_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12917_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12917_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12917">0</div>
+    <input type="hidden" value="4" id="DC12917">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12918" id="div12918" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12918&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12918_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12918_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12918_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12918_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12918_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12918_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12918_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12918_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12918">0</div>
+    <input type="hidden" value="4" id="DC12918">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12919" id="div12919" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12919&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12919_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12919_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12919_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12919_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12919_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12919_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12919_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12919_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12919">0</div>
+    <input type="hidden" value="4" id="DC12919">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

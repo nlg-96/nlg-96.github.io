@@ -1,0 +1,617 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1092">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="10">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453129153"> <span id="Clock_1"> 0:9:57</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/58_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/58_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12807" id="anchor12807"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12807" value="1">
+    Tác nhân quan trọng nhất gây hiện tượng đề kháng Insuline ở thai phụ trong thai kỳ là gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12807" id="C12807" value="1" ng-click="checkKetQua($event);">
+         human Chorionic Gonadotropin (hCG)
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12807" id="C12807" value="2" ng-click="checkKetQua($event);">
+         human Placental  Lactogen (hPL) 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12807" id="C12807" value="3" ng-click="checkKetQua($event);">
+         Cortisol nguồn gốc nhau thai
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12807" id="C12807" value="4" ng-click="checkKetQua($event);">
+         Estrogen và progesterone
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12808" id="anchor12808"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12808" value="1">
+    Nguyên nhân nào gây đột tử cho thai nhi ở thai phụ có đái tháo đường thai kỳ?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12808" id="C12808" value="1" ng-click="checkKetQua($event);">
+         Biên độ biến động nồng độ đường huyết ở máu mẹ lớn 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12808" id="C12808" value="2" ng-click="checkKetQua($event);">
+         Nồng độ đường huyết cao thường trực trong máu mẹ 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12808" id="C12808" value="3" ng-click="checkKetQua($event);">
+         Tình trạng nhiễm toan ketone ở mẹ do đái tháo đường
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12808" id="C12808" value="4" ng-click="checkKetQua($event);">
+         Thoái hóa bánh nhau do đái tháo đường gây giảm trao đổi chất 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12809" id="anchor12809"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12809" value="1">
+    Sự lệch pha giữa chế tiết insuline nồng độ đường huyết ở con dẫn đến hệ quả nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12809" id="C12809" value="1" ng-click="checkKetQua($event);">
+         Thai to so với tuổi thai
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12809" id="C12809" value="2" ng-click="checkKetQua($event);">
+         Thai chậm tăng trưởng 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12809" id="C12809" value="3" ng-click="checkKetQua($event);">
+         Dư thừa thể tích nước ối
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12809" id="C12809" value="4" ng-click="checkKetQua($event);">
+         Đột tử ở thai đang khỏe 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12810" id="anchor12810"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12810" value="1">
+    Trong chiến lược tầm soát đái tháo đường thai kỳ, tầm soát nào là tầm soát sơ cấp?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12810" id="C12810" value="1" ng-click="checkKetQua($event);">
+         Test dung nạp glucose
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12810" id="C12810" value="2" ng-click="checkKetQua($event);">
+         Định lượng nồng độ HbA1C 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12810" id="C12810" value="3" ng-click="checkKetQua($event);">
+         Định lượng đường huyết đói và sau ăn 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12810" id="C12810" value="4" ng-click="checkKetQua($event);">
+         Test nước tiểu bằng que nhúng tìm glucose 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12811" id="anchor12811"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12811" value="1">
+    Trong tầm soát đái tháo đường thai kỳ, test nào có tỉ lệ dương sai (FPR) cao nhất?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12811" id="C12811" value="1" ng-click="checkKetQua($event);">
+         Định lượng insuline huyết tương
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12811" id="C12811" value="2" ng-click="checkKetQua($event);">
+         Test dung nạp 100 gram glucose 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12811" id="C12811" value="3" ng-click="checkKetQua($event);">
+         Test dung nạp  75 gram glucose
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12811" id="C12811" value="4" ng-click="checkKetQua($event);">
+         Test dung nạp  50 gram glucose 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12812" id="anchor12812"></a>
+	<b>6</b>
+    </td><td>
+    <input type="hidden" name="T12812" value="1">
+    Dấu hiệu nào gợi ý glycemia không được kiểm soát tốt ở thai phụ có đái tháo đường thai kỳ?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12812" id="C12812" value="1" ng-click="checkKetQua($event);">
+         Thai to so với tuổi thai 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12812" id="C12812" value="2" ng-click="checkKetQua($event);">
+         Tăng AFI trong 3 tháng giữa
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12812" id="C12812" value="3" ng-click="checkKetQua($event);">
+         Thai chậm tăng trưởng 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12812" id="C12812" value="4" ng-click="checkKetQua($event);">
+         Chúng đều có ý nghĩa gợi ý
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12813" id="anchor12813"></a>
+	<b>7</b>
+    </td><td>
+    <input type="hidden" name="T12813" value="1">
+    Hành động nào có thể làm giảm tỉ lệ thai kỳ có kết cục xấu khi có đái tháo đường thai kỳ?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12813" id="C12813" value="1" ng-click="checkKetQua($event);">
+         Phải thực hiện tốt tiết chế 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12813" id="C12813" value="2" ng-click="checkKetQua($event);">
+         Nên tăng số lần khám thai
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12813" id="C12813" value="3" ng-click="checkKetQua($event);">
+         Nên chấm dứt thai kỳ sớm
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12813" id="C12813" value="4" ng-click="checkKetQua($event);">
+         Chúng quan trọng như nhau 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12814" id="anchor12814"></a>
+	<b>8</b>
+    </td><td>
+    <input type="hidden" name="T12814" value="1">
+    Thai kỳ với đái tháo đường, khảo sát nào có ý nghĩa nhất trong nỗ lực làm giảm đột tử ở thai?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12814" id="C12814" value="1" ng-click="checkKetQua($event);">
+         Velocimetry Doppler
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12814" id="C12814" value="2" ng-click="checkKetQua($event);">
+         Contraction Stress Test
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12814" id="C12814" value="3" ng-click="checkKetQua($event);">
+         Non-stress Test 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12814" id="C12814" value="4" ng-click="checkKetQua($event);">
+         Glycemia đói và sau ăn
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12815" id="anchor12815"></a>
+	<b>9</b>
+    </td><td>
+    <input type="hidden" name="T12815" value="1">
+    Kể từ sau tuần lễ thứ 31, nếu nghi có bất dung nạp đường, bạn sẽ yêu cầu xét nghiệm nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12815" id="C12815" value="1" ng-click="checkKetQua($event);">
+         Test dung nạp đường huyết
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12815" id="C12815" value="2" ng-click="checkKetQua($event);">
+         Đường huyết đói và 2 giờ sau ăn 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12815" id="C12815" value="3" ng-click="checkKetQua($event);">
+         Theo dõi diễn biến đường niệu 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12815" id="C12815" value="4" ng-click="checkKetQua($event);">
+         Định lượng insuline huyết tương
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12816" id="anchor12816"></a>
+	<b>10</b>
+    </td><td>
+    <input type="hidden" name="T12816" value="1">
+    Khi quản lý một trường hợp đái tháo đường thai kỳ, điều nào sau đây là đúng?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12816" id="C12816" value="1" ng-click="checkKetQua($event);">
+         Bắt đầu với điều trị bằng tiết chế. Chỉ dùng thuốc nếu thất bại. Thuốc có thể là metformin hoặc insuline  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12816" id="C12816" value="2" ng-click="checkKetQua($event);">
+         Nếu trước khi mang thai không bị đái tháo đường, thì không có chỉ định dùng thuốc hạ đường huyết 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12816" id="C12816" value="3" ng-click="checkKetQua($event);">
+         Đánh giá ổn định đường huyết bằng các triệu chứng lâm sàng quan trọng hơn là glycemia đói và sau ăn 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12816" id="C12816" value="4" ng-click="checkKetQua($event);">
+         Giới hạn lượng carbohydrate ăn vào quan trọng hơn là việc chia nhỏ lượng carbohydrate ra nhiều bữa nhỏ
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 415px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12807" id="div12807" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12807&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12807_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12807_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12807_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12807_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12807_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12807_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12807_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12807_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12807">0</div>
+    <input type="hidden" value="4" id="DC12807">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12808" id="div12808" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12808&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12808_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12808_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12808_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12808_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12808_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12808_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12808_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12808_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12808">0</div>
+    <input type="hidden" value="4" id="DC12808">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12809" id="div12809" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12809&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12809_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12809_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12809_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12809_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12809_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12809_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12809_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12809_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12809">0</div>
+    <input type="hidden" value="4" id="DC12809">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12810" id="div12810" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12810&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12810_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12810_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12810_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12810_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12810_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12810_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12810_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12810_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12810">0</div>
+    <input type="hidden" value="4" id="DC12810">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12811" id="div12811" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12811&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12811_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12811_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12811_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12811_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12811_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12811_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12811_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12811_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12811">0</div>
+    <input type="hidden" value="4" id="DC12811">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12812" id="div12812" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12812&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C6</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12812_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12812_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12812_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12812_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12812_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12812_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12812_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12812_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12812">0</div>
+    <input type="hidden" value="4" id="DC12812">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12813" id="div12813" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12813&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C7</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12813_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12813_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12813_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12813_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12813_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12813_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12813_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12813_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12813">0</div>
+    <input type="hidden" value="4" id="DC12813">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12814" id="div12814" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12814&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C8</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12814_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12814_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12814_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12814_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12814_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12814_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12814_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12814_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12814">0</div>
+    <input type="hidden" value="4" id="DC12814">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12815" id="div12815" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12815&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C9</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12815_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12815_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12815_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12815_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12815_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12815_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12815_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12815_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12815">0</div>
+    <input type="hidden" value="4" id="DC12815">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12816" id="div12816" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12816&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C10</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12816_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12816_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12816_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12816_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12816_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12816_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12816_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12816_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12816">0</div>
+    <input type="hidden" value="4" id="DC12816">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

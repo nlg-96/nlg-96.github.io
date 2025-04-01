@@ -1,0 +1,679 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1114">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="120">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453412881"> <span id="Clock_1"> 1:59:57</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/105_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/105_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13021" id="anchor13021"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T13021" value="1">
+    TÌNH HUỐNG 1: BÉ ỐM<br>
+Bà H. sanh thường lúc 23:45 ngày 10.04.2016, một bé gái, 2800 gram, có tuổi thai là 35 tuần + 2 ngày.<br>
+Apgar 1 phút = 8, 5 phút = 9.<br>
+Ghi nhận có phá ối lúc 23:15 ngày 10.04.2016.<br>
+Trong các ngày đầu sau sanh, bé được mẹ cho bú mẹ hoàn toàn.<br>
+Trong thời gian này, bé không sốt, với thân nhiệt dao động quanh 36.8 độ C.<br>
+Tiểu khoảng 2-3 lần một ngày.<br>
+Bé tiêu phân su trong ngày đầu.<br>
+2 ngày nay bé đi tiêu khoảng 2-3 lần một ngày, với tính chất phân vàng, hơi sệt.<br>
+Bé có vàng da từ sáng ngày 12.04.2016.<br>
+Tình trạng vàng da của bé tăng dần.<br>
+Chiều tối ngày 13.04.2016, mẹ thấy bé có vẻ ở trong tình trạng lừ đừ.<br>
+Lúc 15 giờ ngày 14.04.2016, bé được nhập khoa nhi vì vàng da.<br>
+Nồng độ bilirubin toàn phần (TSB) khi nhập khoa nhi là 352.1 µmol/L.<br>
+Bé được cho ngưng sữa mẹ, bú sữa công thức với lượng 50 mL/cữ x 8 cữ.<br>
+Đồng thời với các việc trên là thực hiện quang trị liệu liên tục.<br> 
+72 giờ sau quang trị liệu, TSB đo lại là 150.6 µmol/L.<br>
+Bé được ngưng quang trị liệu và cho về với mẹ.<br>
+Người ta dặn bà H. tiếp tục cho phơi nắng sáng hàng ngày và thực hiện tiếp nuôi con bằng sữa mẹ.<br>
+Hãy bình luận về tình trạng của bé con bà H.<br>
+Chọn duy nhất một câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13021" id="C13021" value="1" ng-click="checkKetQua($event);">
+         Tình trạng của bé là nặng
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13021" id="C13021" value="2" ng-click="checkKetQua($event);">
+         Tình trạng vàng da là vàng da sinh lý đơn thuần, không có yếu tố thuận lợi thúc đẩy vàng da
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13021" id="C13021" value="3" ng-click="checkKetQua($event);">
+         Quang trị liệu được bắt đầu đúng thời điểm cần thiết
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13021" id="C13021" value="4" ng-click="checkKetQua($event);">
+         Theo dõi và điều trị hỗ trợ cho bé trong thời gian quang trị liệu là chính xác 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13021" id="C13021" value="5" ng-click="checkKetQua($event);">
+         Quang trị liệu được kết thúc đúng thời điểm
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13021" id="C13021" value="6" ng-click="checkKetQua($event);">
+         Lời dặn trước khi cho bé về với mẹ là hợp lý
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13021" id="C13021" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13022" id="anchor13022"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T13022" value="1">
+    TÌNH HUỐNG 2: BÉ ỐM<br>
+Con bà G. sanh được 36 giờ.<br>
+Bé được sanh thường, cuộc sanh thuận lợi, nhanh chóng, sau phá ối 6 giờ.<br>
+Trong cuộc sanh, người ta có dùng khí NO để giảm đau trong giai đoạn sổ thai, do không kịp gây tê ngoài màng cứng.<br>
+Bé cân nặng 4200 g khi sanh.<br>
+Bà G. nuôi con hoàn toàn bằng sữa mẹ.<br>
+Ngày qua, bé rất tích cực bú và thường xuyên khóc đòi bú.<br>
+Sáng nay, khi đi thăm bệnh, bạn thấy bé đang nằm cạnh bên mẹ, có vẻ li bì, đầu chi lạnh, dù bé được mặc đủ ấm.<br>
+Bé: T = 36.2 độ C, thóp phẳng.<br>
+Da ửng vàng.<br>
+Phản xạ nguyên phát đủ.<br>
+Bụng mềm, rốn chưa khô.<br>
+Không bất thường khác.<br>
+Hãy nhận định về tình trạng của con bà G. và nêu cách xử lý.<br>
+Chọn một câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13022" id="C13022" value="1" ng-click="checkKetQua($event);">
+         Vấn đề của bé liên quan đến các sang chấn sản khoa 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13022" id="C13022" value="2" ng-click="checkKetQua($event);">
+         Vấn đề của bé liên quan đến nhiễm trùng sơ sinh
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13022" id="C13022" value="3" ng-click="checkKetQua($event);">
+         Vấn đề của bé liên quan đến chế độ nuôi ăn của bé
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13022" id="C13022" value="4" ng-click="checkKetQua($event);">
+         Vấn để của bé liên quan đến cách thực hiện chuỗi ấm 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13022" id="C13022" value="5" ng-click="checkKetQua($event);">
+         Vấn đề của bé liên quan đến vàng da 
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13022" id="C13022" value="6" ng-click="checkKetQua($event);">
+         Vấn đề của bé liên quan đến thuốc dùng trong chuyển dạ
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13022" id="C13022" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13023" id="anchor13023"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T13023" value="1">
+    TÌNH HUỐNG 3: LIỆT SAU SANH<br>
+Bà A. 29 tuổi, sanh lần đầu, hiện đang ở ngày hậu sản đầu tiên.<br>
+Trong chuyển dạ, bà A. có tiền sản giật không có biểu hiện nặng.<br>
+Bà A. đã được gây tê ngoài màng cứng giảm đau sản khoa.<br>
+Giai đoạn sổ thai dài 2 giờ, kết thúc bằng sanh forceps vì mẹ rặn không hiệu quả.<br>
+Forceps được thực hiện ở thế chẩm vệ, vị trí +3, dễ dàng, nhưng gây ra tổn thương tầng sinh môn độ 3.<br>
+Khâu phục hồi tầng sinh môn được thực hiện tại phòng sanh, kéo dài hơn 1 giờ, không biến chứng tụ máu.<br>
+Hiện tại, bà A. than phiền rằng bà ta không đứng dậy và đi lại được, do không cử động được phần cẳng chân trái, kèm theo là tình trạng mất cảm giác một phần cẳng chân trái kể từ sau khi sanh.<br>
+Khám ghi nhận toàn trạng khỏe, niêm hồng, M 84 lần/phút, huyết áp 130/70 mmHg, không sốt.<br>
+Không nhức đầu, không hoa mắt, không có dấu hiệu màng não, không dấu thần kinh định vị.<br>
+Tử cung thu hồi tốt, gò chặt, không đau, bề cao tử cung 10 cm trên vệ.<br>
+Sản dịch sạch, lượng vừa, không hôi.<br>
+Vết may tầng sinh môn phù nề, đau, nhưng không có biểu hiện của tụ máu.<br>
+Chân trái có kích thước bình thường, không có dấu hiệu nóng đỏ.<br>
+Liệt vận động các cơ mặt ngoài cẳng chân trái.<br>
+Mất cảm giác mặt ngoài cẳng chân và bàn chân trái.<br>
+Bạn nghĩ đến khả năng nào?<br>
+Chọn một câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13023" id="C13023" value="1" ng-click="checkKetQua($event);">
+         Hậu quả của xuất huyết não 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13023" id="C13023" value="2" ng-click="checkKetQua($event);">
+         Biến chứng của gây tê ngoài màng cứng
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13023" id="C13023" value="3" ng-click="checkKetQua($event);">
+         Biến chứng của sanh forceps
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13023" id="C13023" value="4" ng-click="checkKetQua($event);">
+         Hậu quả của tổn thương tầng sinh môn 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13023" id="C13023" value="5" ng-click="checkKetQua($event);">
+         Hậu quả của nằm quá lâu trên bàn sanh
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13023" id="C13023" value="6" ng-click="checkKetQua($event);">
+         Viêm tắc tĩnh mạch chi dưới
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13023" id="C13023" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13024" id="anchor13024"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T13024" value="1">
+    TÌNH HUỐNG 4: SỐT SAU SANH<br>
+Bà B. 31 tuổi, sanh lần đầu, hiện đang ở ngày hậu sản thứ nhì.<br>
+Bà B. được mổ sanh chủ động vì hội chứng HELLP.<br>
+Trong và ngay sau khi mổ sanh, bà được dùng kháng sinh dự phòng.<br>
+Kháng sinh đã được ngưng sau liều dự phòng sau mổ.<br>
+Từ chiều hôm qua, bà B. bắt đầu có sốt.<br>
+Khám ghi nhận toàn trạng tỉnh nhưng mệt mỏi, niêm hồng, M 84 lần/phút, huyết áp 140/85 mmHg, T = 38 độ C.<br>
+Không nhức đầu, không hoa mắt, không có dấu hiệu màng não, không dấu thần kinh định vị.<br>
+Hai vú căng cứng, nặn chỉ ra một ít sữa non.<br>
+Bà ta chưa cho bú vì nghĩ rằng chưa có sữa.<br>
+Mỗi bên nách có 1 khối cứng, chạm rất đau, giới hạn rõ, di động tốt.<br>
+Bụng mềm, khám vết mổ mềm, không nề, đau nhiều tại vết mổ, ấn hai hố chậu không đau, tử cung chạm không đau.<br>
+Tử cung mềm, không đau khi khám, bề cao tử cung 15 cm trên vệ.<br>
+Đặt mỏ vịt thấy sản dịch lượng rất ít, màu hồng nhạt, nặng mùi.<br>
+Bạn nghĩ đến khả năng nào? Và bạn sẽ điều trị ra sao?<br>
+Chọn tối đa bốn câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13024" id="C13024" value="1" ng-click="checkKetQua($event);">
+         Sốt do nhiễm trùng hậu sản
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13024" id="C13024" value="2" ng-click="checkKetQua($event);">
+         Sốt do viêm tuyến vú
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13024" id="C13024" value="3" ng-click="checkKetQua($event);">
+         Hiện tại vẫn chưa có chỉ định dùng kháng sinh điều trị
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13024" id="C13024" value="4" ng-click="checkKetQua($event);">
+         Hiện tại nhất thiết phải chỉ định kháng sinh điều trị
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13024" id="C13024" value="5" ng-click="checkKetQua($event);">
+         Hiện tại điều trị vẫn là điều trị nội khoa đơn thuần 
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13024" id="C13024" value="6" ng-click="checkKetQua($event);">
+         Cần phối hợp với các điều trị khác ngoài điều trị bằng thuốc
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13024" id="C13024" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13025" id="anchor13025"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T13025" value="1">
+    TÌNH HUỐNG 5: BÍ TIỂU SAU SANH<br>
+Bà C. sanh lần thứ nhất, hiện tại ở giờ thứ 20 hậu sản.<br>
+Cuộc sanh được thực hiện với forceps Kjelland.<br>
+Chỉ định của thủ thuật là ngôi chỏm ngưng xoay ở kiểu thế chẩm phải ngang.<br>
+Khi đặt forceps, ngôi chỏm ở vị trí +2 / +3.<br>
+Tổng thời gian ở giai đoạn 2 của chuyển dạ là 2 giờ.<br>
+Trong thời gian lưu lại tại phòng hậu sản gần của phòng sanh, bà ta bị ra huyết âm đạo khoảng 200 mL.<br>
+Do ra huyết và có cầu bàng quang nên người ta có thông tiểu cho bà C. một lần.<br>
+Sau khi thông tiểu, bà hết ra huyết.<br>
+Người ta không để lưu thông tiểu.<br>
+Từ khi về trại hậu sản, bà C. không đi tiểu được.<br>
+Khám ghi nhận sinh hiệu ổn, không sốt.<br>
+Bụng mềm, tử cung gò chặt, bị đẩy lên cao bởi khối cầu bàng quang to.<br>
+Sản dịch lượng vừa.<br>
+Hãy nhận định về chăm sóc đã thực hiện và ra quyết định.<br>
+Chọn 2 câu đúng.
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13025" id="C13025" value="1" ng-click="checkKetQua($event);">
+         Các can thiệp và xử trí kể từ sau khi sanh xong là đúng 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13025" id="C13025" value="2" ng-click="checkKetQua($event);">
+         Các can thiệp và xử trí kể từ sau khi sanh xong là sai 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13025" id="C13025" value="3" ng-click="checkKetQua($event);">
+         Hiện tại cần bắt đầu bằng thuốc giúp co bóp bàng quang 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13025" id="C13025" value="4" ng-click="checkKetQua($event);">
+         Hiện tại cần bắt đầu bằng thông tiểu và sau đó rút thông 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13025" id="C13025" value="5" ng-click="checkKetQua($event);">
+         Hiện tại cần bắt đầu bằng thông tiểu và lưu lại thông tiểu một thời gian rồi rút
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13025" id="C13025" value="6" ng-click="checkKetQua($event);">
+         Hiện tại cần bắt đầu bằng thông tiểu và lưu lại thông tiểu kết hợp với tập bàng quang
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13025" id="C13025" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor13026" id="anchor13026"></a>
+	<b>6</b>
+    </td><td>
+    <input type="hidden" name="T13026" value="1">
+    TÌNH HUỐNG 6: BÉ ỐM<br>
+Hôm nay bé D. được tròn 5 ngày tuổi.<br>
+Bé sanh thường, với cân nặng lúc sanh là 2500 gram, tuổi thai lúc sanh là 35 tuần.<br>
+Tổng thời gian từ lúc vỡ ối đến lúc sanh là 6 giờ.<br>
+Bé được mẹ cho bú sữa mẹ hoàn toàn.<br>
+3 ngày sau khi sanh, mẹ và bé được về nhà.<br>
+Người ta có tiêm phòng BCG và cho bé uống Sabin cho bé trước khi về nhà.<br>
+Ngày đầu tiên sau khi về nhà, bé bú ngủ bình thường.<br>
+Từ sáng hôm nay, bé D. bỏ bú, li bì.<br>
+Khám bé thấy nhiệt độ 36.2 độ C.<br>
+Nhịp thở 48 lần/phút, với cánh mũi phập phồng và co kéo cơ ức đòn chũm, đầu chi tím.<br>
+Da bé có ánh vàng.<br>
+Nhịp tim nhanh đều, 140 nhịp/phút.<br>
+Phổi âm phế bào thô ráp.<br>
+Bụng mềm.<br>
+Rốn được mẹ băng kín, chưa khô hẳn và có ít dịch ở chân rốn. Chân rốn không đỏ.<br>
+Hãy đánh giá tình hình của bé.<br>
+Chọn một đánh giá và hai can thiệp có mức độ ưu tiên cao nhất.  
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C13026" id="C13026" value="1" ng-click="checkKetQua($event);">
+         Tình hình của bé D. là rất nặng 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C13026" id="C13026" value="2" ng-click="checkKetQua($event);">
+         Tình hình của bé D. không nặng 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C13026" id="C13026" value="3" ng-click="checkKetQua($event);">
+         Cần xem xét ngay khả năng phải chỉ định kháng sinh đường toàn thân
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C13026" id="C13026" value="4" ng-click="checkKetQua($event);">
+         Cần xem xét ngay khả năng phải chỉ định quang liệu pháp 
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C13026" id="C13026" value="5" ng-click="checkKetQua($event);">
+         Điều trị chủ yếu tập trung vào nhiễm trùng rốn
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C13026" id="C13026" value="6" ng-click="checkKetQua($event);">
+         Điều trị chủ yếu tập trung là khắc phục tác dụng ngoại ý của tiêm phòng
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C13026" id="C13026" value="7" ng-click="checkKetQua($event);">
+            
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 295px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div13021" id="div13021" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13021&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13021_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13021_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13021_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13021_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13021_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13021_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13021_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13021_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13021">0</div>
+    <input type="hidden" value="4" id="DC13021">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13022" id="div13022" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13022&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13022_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13022_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13022_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13022_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13022_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13022_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13022_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13022_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13022">0</div>
+    <input type="hidden" value="4" id="DC13022">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13023" id="div13023" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13023&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13023_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13023_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13023_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13023_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13023_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13023_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13023_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13023_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13023">0</div>
+    <input type="hidden" value="4" id="DC13023">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13024" id="div13024" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13024&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13024_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13024_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13024_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13024_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13024_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13024_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13024_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13024_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13024">0</div>
+    <input type="hidden" value="4" id="DC13024">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13025" id="div13025" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13025&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13025_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13025_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13025_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13025_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13025_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13025_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13025_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13025_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13025">0</div>
+    <input type="hidden" value="4" id="DC13025">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div13026" id="div13026" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor13026&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C6</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D13026_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D13026_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D13026_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D13026_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D13026_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D13026_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL13026_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D13026_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ13026">0</div>
+    <input type="hidden" value="4" id="DC13026">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

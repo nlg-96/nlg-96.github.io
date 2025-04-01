@@ -1,0 +1,617 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1097">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="10">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453467372"> <span id="Clock_1"> 0:9:57</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/114_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/114_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12857" id="anchor12857"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12857" value="1">
+    Sự hiện diện của sIgA trong sữa mẹ là kết quả của tiến trình nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12857" id="C12857" value="1" ng-click="checkKetQua($event);">
+         Lắp ghép sIgA tại màng bào tương và vận chuyển xuyên tế bào sIgA thành phẩm 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12857" id="C12857" value="2" ng-click="checkKetQua($event);">
+         Dịch chuyển cạnh tế bào của sIgA cùng một lúc với các thành phần của huyết tương 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12857" id="C12857" value="3" ng-click="checkKetQua($event);">
+         Vận chuyển trực tiếp qua màng tế bào sIgA hoàn chỉnh được tổng hợp trong bào tương
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12857" id="C12857" value="4" ng-click="checkKetQua($event);">
+         Tổng hợp sIgA tại bộ Golgi và tống xuất sIgA thành phẩm khỏi tế bào bằng sự vỡ tiểu thể
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12858" id="anchor12858"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12858" value="1">
+    Vì sao nuôi con bằng sữa mẹ hoàn toàn đảm bảo cho sự bảo vệ sơ sinh khỏi các tác nhân gây bệnh?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12858" id="C12858" value="1" ng-click="checkKetQua($event);">
+         Vì sữa mẹ cung cấp IgA trong bối cảnh đường tiêu hóa sơ sinh chưa đủ năng lực chế tiết đầy đủ IgA
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12858" id="C12858" value="2" ng-click="checkKetQua($event);">
+         Vì sữa mẹ cung cấp IgA là immunoglobulin không bị phá hủy bởi men protease của môi trường ruột
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12858" id="C12858" value="3" ng-click="checkKetQua($event);">
+         Vì sữa mẹ cung cấp IgA là immunoglobulin chốt chặn tiền tiêu trong hệ thống bảo vệ niêm mạc sơ sinh
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12858" id="C12858" value="4" ng-click="checkKetQua($event);">
+         Phối hợp cả ba luận điểm trên tạo nên cơ sở vững chắc củng cố cho khả năng bảo vệ sơ sinh của sữa mẹ 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12859" id="anchor12859"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12859" value="1">
+    Vàng da sơ sinh do sữa mẹ giống với vàng da sơ sinh do nuôi con bằng sữa mẹ ở điểm nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12859" id="C12859" value="1" ng-click="checkKetQua($event);">
+         Nguy cơ dẫn đến bệnh não bilirubin của cả 2 là như nhau  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12859" id="C12859" value="2" ng-click="checkKetQua($event);">
+         Cả 2 loại vàng da này đều có cùng một cơ chế bệnh sinh  
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12859" id="C12859" value="3" ng-click="checkKetQua($event);">
+         Ngưng sữa mẹ là điều trị chủ yếu cho cả 2 loại vàng da này
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12859" id="C12859" value="4" ng-click="checkKetQua($event);">
+         Cả 2 loại vàng da này đáp ứng như nhau với quang liệu pháp 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12860" id="anchor12860"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12860" value="1">
+    Vì sao việc làm trống hoàn toàn bầu vú sau kết thúc mỗi cữ bú lại thúc đẩy việc tạo sữa?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12860" id="C12860" value="1" ng-click="checkKetQua($event);">
+         Bầu vú trống gây feed-back lên tuyến yên thúc đẩy sản xuất prolactin
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12860" id="C12860" value="2" ng-click="checkKetQua($event);">
+         Bầu vú trống loại trừ các chất gây ức chế tuyến yên tiết prolactin  
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12860" id="C12860" value="3" ng-click="checkKetQua($event);">
+         Bầu vú trống đảm bảo hiệu quả của prolactin trên mô-tế bào tuyến vú 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12860" id="C12860" value="4" ng-click="checkKetQua($event);">
+         Bầu vú trống là yếu tố khởi động cả hai phản xạ prolactin và oxytocin
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12861" id="anchor12861"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12861" value="1">
+    Lợi điểm nào của việc nuôi con bằng sữa mẹ hoàn toàn và đúng cách đã được chứng minh?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12861" id="C12861" value="1" ng-click="checkKetQua($event);">
+         Nuôi con bằng sữa mẹ hoàn toàn làm giảm khả năng lây truyền dọc virus HIV 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12861" id="C12861" value="2" ng-click="checkKetQua($event);">
+         Nuôi con bằng sữa mẹ hoàn toàn làm giảm khả năng lây truyền dọc virus HBV
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12861" id="C12861" value="3" ng-click="checkKetQua($event);">
+         Nuôi con bằng sữa mẹ hoàn toàn giúp trẻ tránh các bệnh mà mẹ đã được tiêm phòng
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12861" id="C12861" value="4" ng-click="checkKetQua($event);">
+         Nuôi con bằng sữa mẹ hoàn toàn giúp mẹ tránh thai một cách có hiệu quả 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12862" id="anchor12862"></a>
+	<b>6</b>
+    </td><td>
+    <input type="hidden" name="T12862" value="1">
+    Khi thực hiện nuôi con bằng sữa mẹ, người mẹ phải đảm bảo có được điều gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12862" id="C12862" value="1" ng-click="checkKetQua($event);">
+         Phải đảm bảo rằng đó là các bữa bú có hiệu quả 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12862" id="C12862" value="2" ng-click="checkKetQua($event);">
+         Phải chọn đúng tư thế cho bú thích hợp với mẹ và trẻ 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12862" id="C12862" value="3" ng-click="checkKetQua($event);">
+         Phải đảm bảo rằng đã thực hiện đặt trẻ vào vú đúng cách
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12862" id="C12862" value="4" ng-click="checkKetQua($event);">
+         Phải đảm bảo rằng trẻ đã ngậm bắt vú đúng
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12863" id="anchor12863"></a>
+	<b>7</b>
+    </td><td>
+    <input type="hidden" name="T12863" value="1">
+    Khi đã xác định có viêm vú nhiễm trùng, khi nào buộc phải không cho trẻ dùng sữa từ bên vú bị nhiễm trùng - nghĩa là không cho trẻ bú trực tiếp lẫn uống sữa vắt ra từ bên vú bệnh qua cốc và thìa?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12863" id="C12863" value="1" ng-click="checkKetQua($event);">
+         Trong mọi trường hợp, khi đã xác định có nhiễm trùng 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12863" id="C12863" value="2" ng-click="checkKetQua($event);">
+         Khi trẻ từ chối không chịu ăn sữa có nguồn gốc vú bệnh 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12863" id="C12863" value="3" ng-click="checkKetQua($event);">
+         Trong các trường hợp bị buộc phải điều trị kháng sinh 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12863" id="C12863" value="4" ng-click="checkKetQua($event);">
+         Khi kết quả của phân lập vi khuẩn trong sữa dương tính
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12864" id="anchor12864"></a>
+	<b>8</b>
+    </td><td>
+    <input type="hidden" name="T12864" value="1">
+    Trong quá trình thực hiện nuôi con bằng sữa mẹ, khi phát hiện có vấn đề về vú (cương tức, tắc tia sữa, viêm vú …), động thái nào là cần thiết để nhận diện nguyên nhân và để giúp thực hiện một can thiệp có hiệu quả? 
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12864" id="C12864" value="1" ng-click="checkKetQua($event);">
+         Hỏi về cách thực hiện nuôi con bằng sữa mẹ
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12864" id="C12864" value="2" ng-click="checkKetQua($event);">
+         Đề nghị bà mẹ cho bạn quan sát một bữa bú 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12864" id="C12864" value="3" ng-click="checkKetQua($event);">
+         Khám lâm sàng tình trạng mẹ, tuyến vú và bé 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12864" id="C12864" value="4" ng-click="checkKetQua($event);">
+         Buộc phải thực hiện đầy đủ cả ba động thái trên 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12865" id="anchor12865"></a>
+	<b>9</b>
+    </td><td>
+    <input type="hidden" name="T12865" value="1">
+    Một bà mẹ nhiễm HBV muốn tìm hiểu về lây truyền dọc HBV từ mẹ sang con nếu thực hiện nuôi con bằng sữa mẹ. Tư vấn nào sau đây về lây truyền dọc HBV từ mẹ sang con là chính xác?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12865" id="C12865" value="1" ng-click="checkKetQua($event);">
+         Quyết định cho con bú mẹ tùy thuộc vào kết quả HBeAg. Không cho bú mẹ nếu HBeAg dương tính  
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12865" id="C12865" value="2" ng-click="checkKetQua($event);">
+         Sau sanh, mọi trẻ phải được tiêm đủ immunoglobulin và vaccin, dù rằng sẽ có bú mẹ hay không bú mẹ 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12865" id="C12865" value="3" ng-click="checkKetQua($event);">
+         Sữa mẹ có nhiều immunoglobulin IgA, có thể giúp bảo vệ trẻ không bị lây truyền dọc từ mẹ 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12865" id="C12865" value="4" ng-click="checkKetQua($event);">
+         Dù được tiêm phòng đầy đủ sau sanh, thì trẻ bú mẹ vẫn có nguy cơ nhiễm cao hơn trẻ không bú mẹ
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12866" id="anchor12866"></a>
+	<b>10</b>
+    </td><td>
+    <input type="hidden" name="T12866" value="1">
+    Ở Việt Nam, khi người mẹ có kết quả khảo sát huyết thanh HIV dương tính hỏi bạn về cách nuôi con, yếu tố nào là yếu tố phải được xem xét trước tiên, và được xem là yếu tố quan trọng nhất, để đi đến quyết định về phương thức nuôi con?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12866" id="C12866" value="1" ng-click="checkKetQua($event);">
+         Yếu tố phải xét trước tiên là trong thai kỳ bà ta đã dùng ARVs dự phòng hay ARVs điều trị hay vẫn chưa dùng
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12866" id="C12866" value="2" ng-click="checkKetQua($event);">
+         Yếu tố phải xét trước tiên là tải lượng virus và kết quả đếm CD4 ở thời điểm quyết định phương thức nuôi con 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12866" id="C12866" value="3" ng-click="checkKetQua($event);">
+         Yếu tố phải xét trước tiên là bà ta có thể nuôi thay thế hoàn toàn bằng sữa công thức thỏa AFASS hay không 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12866" id="C12866" value="4" ng-click="checkKetQua($event);">
+         Yếu tố phải xem xét trước tiên là bà ta có đảm bảo được sẽ chỉ nuôi con bằng sữa mẹ hoàn toàn và đúng hay không
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 415px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12857" id="div12857" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12857&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12857_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12857_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12857_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12857_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12857_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12857_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12857_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12857_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12857">0</div>
+    <input type="hidden" value="4" id="DC12857">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12858" id="div12858" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12858&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12858_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12858_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12858_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12858_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12858_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12858_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12858_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12858_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12858">0</div>
+    <input type="hidden" value="4" id="DC12858">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12859" id="div12859" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12859&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12859_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12859_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12859_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12859_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12859_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12859_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12859_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12859_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12859">0</div>
+    <input type="hidden" value="4" id="DC12859">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12860" id="div12860" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12860&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12860_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12860_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12860_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12860_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12860_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12860_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12860_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12860_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12860">0</div>
+    <input type="hidden" value="4" id="DC12860">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12861" id="div12861" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12861&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12861_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12861_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12861_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12861_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12861_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12861_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12861_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12861_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12861">0</div>
+    <input type="hidden" value="4" id="DC12861">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12862" id="div12862" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12862&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C6</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12862_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12862_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12862_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12862_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12862_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12862_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12862_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12862_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12862">0</div>
+    <input type="hidden" value="4" id="DC12862">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12863" id="div12863" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12863&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C7</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12863_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12863_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12863_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12863_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12863_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12863_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12863_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12863_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12863">0</div>
+    <input type="hidden" value="4" id="DC12863">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12864" id="div12864" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12864&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C8</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12864_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12864_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12864_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12864_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12864_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12864_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12864_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12864_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12864">0</div>
+    <input type="hidden" value="4" id="DC12864">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12865" id="div12865" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12865&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C9</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12865_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12865_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12865_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12865_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12865_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12865_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12865_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12865_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12865">0</div>
+    <input type="hidden" value="4" id="DC12865">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12866" id="div12866" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12866&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C10</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12866_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12866_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12866_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12866_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12866_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12866_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12866_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12866_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12866">0</div>
+    <input type="hidden" value="4" id="DC12866">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

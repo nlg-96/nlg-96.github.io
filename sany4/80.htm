@@ -1,0 +1,617 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1089">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="10">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453261320"> <span id="Clock_1"> 0:9:58</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/80_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/80_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12777" id="anchor12777"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12777" value="1">
+    Đem biểu đồ Friedman chồng lên sản đồ WHO, bạn nhận xét thấy điều gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12777" id="C12777" value="1" ng-click="checkKetQua($event);">
+         Biểu đồ Friedman nằm hoàn toàn ở bên phải đường báo động của sản đồ WHO
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12777" id="C12777" value="2" ng-click="checkKetQua($event);">
+         Biểu đồ Friedman gần như trùng khít với đường báo động của sản đồ WHO
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12777" id="C12777" value="3" ng-click="checkKetQua($event);">
+         Giai đoạn cuối của biểu đồ Friedman nằm ở bên phải đường báo động của sản đồ WHO
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12777" id="C12777" value="4" ng-click="checkKetQua($event);">
+         Biểu đồ Friedman gần như nằm hoàn toàn ở bên trái đường báo động của sản đồ WHO 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12778" id="anchor12778"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12778" value="1">
+    Sản đồ WHO đã được ghi trước đó, điều kiện để thực hiện tịnh tiến khi cổ tử cung ≥ 3cm là gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12778" id="C12778" value="1" ng-click="checkKetQua($event);">
+         Chỉ cần có các cơn co thỏa tiêu chuẩn cần để tịnh tiến
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12778" id="C12778" value="2" ng-click="checkKetQua($event);">
+         Chỉ cần ngôi thai đã lọt hay đã hướng vào tiểu khung
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12778" id="C12778" value="3" ng-click="checkKetQua($event);">
+         Chỉ cần mở cổ tử cung thỏa tiêu chuẩn cần để tịnh tiến 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12778" id="C12778" value="4" ng-click="checkKetQua($event);">
+         Cả cơn co, ngôi thai, cổ tử cung thỏa tiêu chuẩn để tịnh tiến
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12779" id="anchor12779"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12779" value="1">
+    Trong chuyển dạ sanh ngôi chỏm, người ta phải thực hiện phá ối ở thời điểm nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12779" id="C12779" value="1" ng-click="checkKetQua($event);">
+         Khi cổ tử cung đã đạt được độ mở cần thiết ≥ 4cm
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12779" id="C12779" value="2" ng-click="checkKetQua($event);">
+         Khi ngôi chỏm đã lọt đến vị trí đủ sâu, tối thiểu là -1
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12779" id="C12779" value="3" ng-click="checkKetQua($event);">
+         Khi cơn co tử cung đã đạt yêu cầu về cường độ và tần số
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12779" id="C12779" value="4" ng-click="checkKetQua($event);">
+         Khi nhận định rằng đầu ối trở thành yếu tố cản trở chuyển dạ 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12780" id="anchor12780"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12780" value="1">
+    Trong chuyển dạ bình thường, khi dùng oxytocin để tăng co, buộc phải thỏa điều kiện nào?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12780" id="C12780" value="1" ng-click="checkKetQua($event);">
+         Có phòng mổ sẵn sàng
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12780" id="C12780" value="2" ng-click="checkKetQua($event);">
+         Có sẵn các loại thuốc giảm co
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12780" id="C12780" value="3" ng-click="checkKetQua($event);">
+         Biểu đồ chưa chạm đường hành động
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12780" id="C12780" value="4" ng-click="checkKetQua($event);">
+         Có phương tiện theo dõi cơn co-tim thai hiệu quả 
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12781" id="anchor12781"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12781" value="1">
+    Chuyển dạ giai đoạn I, khi bắt đầu truyền lại oxytocin sau một khoảng tạm ngưng, cần lưu ý gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12781" id="C12781" value="1" ng-click="checkKetQua($event);">
+         Bắt đầu truyền lại với tốc độ truyền chậm nhất có thể điều chỉnh được 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12781" id="C12781" value="2" ng-click="checkKetQua($event);">
+         Bắt đầu truyền lại với tốc độ truyền chậm hơn tốc độ trước khi tạm ngưng
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12781" id="C12781" value="3" ng-click="checkKetQua($event);">
+         Bắt đầu truyền lại với tốc độ truyền bằng với tốc độ trước khi tạm ngưng 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12781" id="C12781" value="4" ng-click="checkKetQua($event);">
+         Bắt đầu truyền lại với tốc độ truyền ít nhất là bằng với tốc độ trước khi tạm ngưng
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12782" id="anchor12782"></a>
+	<b>6</b>
+    </td><td>
+    <input type="hidden" name="T12782" value="1">
+    Kiểu thế Chẩm Chậu Trái Sau, sổ Chẩm Vệ: ngôi xoay trong, xoay ngoài thì thứ nhất, thì thứ nhì ra sao?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12782" id="C12782" value="1" ng-click="checkKetQua($event);">
+         Xoay trong: -45 độ; xoay ngoài thứ nhất: +45độ; xoay ngoài thứ nhì: +45độ
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12782" id="C12782" value="2" ng-click="checkKetQua($event);">
+         Xoay trong: +45độ; xoay ngoài thứ nhất: -45độ; xoay ngoài thứ nhì: -45độ
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12782" id="C12782" value="3" ng-click="checkKetQua($event);">
+         Xoay trong: -135độ; xoay ngoài thứ nhất: +135độ; xoay ngoài thứ nhì: -45độ 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12782" id="C12782" value="4" ng-click="checkKetQua($event);">
+         Xoay trong: +135độ; xoay ngoài thứ nhất: -135độ; xoay ngoài thứ nhì: +45độ
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12783" id="anchor12783"></a>
+	<b>7</b>
+    </td><td>
+    <input type="hidden" name="T12783" value="1">
+    Thai nhi ít bị đe dọa trong trường hợp có nhịp giảm bất định điển hình. Lý giải?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12783" id="C12783" value="1" ng-click="checkKetQua($event);">
+         Nhịp giảm này chỉ thể hiện các biến động về khí máu. Chức năng của hành não còn bình thường
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12783" id="C12783" value="2" ng-click="checkKetQua($event);">
+         Nhịp giảm này chỉ thể hiện các biến đổi huyết động. Chức năng của hành não còn bình thường 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12783" id="C12783" value="3" ng-click="checkKetQua($event);">
+         Nhịp giảm này chỉ thể hiện các biến động ngắn hạn. Khả năng bù trừ đảm bảo tiên lượng dài hạn tốt
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12783" id="C12783" value="4" ng-click="checkKetQua($event);">
+         Nhịp giảm này thể hiện sự bù trừ tức thời và hiệu quả về khí máu, cân bằng toan kiềm của thai nhi
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12784" id="anchor12784"></a>
+	<b>8</b>
+    </td><td>
+    <input type="hidden" name="T12784" value="1">
+    Chống chỉ định của gây tê ngoài màng cứng để giảm đau sản khoa là gì? Chọn một chống chỉ định của tê ngoài màng cứng để giảm đau sản khoa
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12784" id="C12784" value="1" ng-click="checkKetQua($event);">
+         Khi có thể phải thực hiện thử thách chuyển dạ cho sản phụ
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12784" id="C12784" value="2" ng-click="checkKetQua($event);">
+         Khi sản phụ có rối loạn về chức năng đông-cầm máu 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12784" id="C12784" value="3" ng-click="checkKetQua($event);">
+         Chuyển dạ trên sản phụ có vết mổ lấy thai cũ 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12784" id="C12784" value="4" ng-click="checkKetQua($event);">
+         Chuyển dạ trên sản phụ có bệnh van tim
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12785" id="anchor12785"></a>
+	<b>9</b>
+    </td><td>
+    <input type="hidden" name="T12785" value="1">
+    Theo y học chứng cứ, can thiệp nào là quan trọng nhất trong can thiệp tích cực giai đoạn 3?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12785" id="C12785" value="1" ng-click="checkKetQua($event);">
+         Dùng oxytocin ngoại sinh sớm 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12785" id="C12785" value="2" ng-click="checkKetQua($event);">
+         Kéo dây rốn có kiểm soát
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12785" id="C12785" value="3" ng-click="checkKetQua($event);">
+         Xoa bóp đáy tử cung đúng 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12785" id="C12785" value="4" ng-click="checkKetQua($event);">
+         Kẹp cắt dây rốn sớm
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12786" id="anchor12786"></a>
+	<b>10</b>
+    </td><td>
+    <input type="hidden" name="T12786" value="1">
+    Khác biệt căn nguyên dẫn tới việc thiết lập tuần hoàn ở sơ sinh là gì?
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12786" id="C12786" value="1" ng-click="checkKetQua($event);">
+         Tăng áp suất máu trong buồng nhĩ trái làm đóng lỗ bầu dục
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12786" id="C12786" value="2" ng-click="checkKetQua($event);">
+         Giảm trở kháng của hệ thống giường mao mạch phế nang 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12786" id="C12786" value="3" ng-click="checkKetQua($event);">
+         Tăng huyết áp hệ thống do tăng kháng lực của tuần hoàn ngoại vi 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12786" id="C12786" value="4" ng-click="checkKetQua($event);">
+         Chênh lệch giữa áp suất khí quyển và áp suất thủy tĩnh trong buồng ối
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 415px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12777" id="div12777" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12777&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12777_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12777_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12777_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12777_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12777_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12777_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12777_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12777_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12777">0</div>
+    <input type="hidden" value="4" id="DC12777">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12778" id="div12778" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12778&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12778_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12778_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12778_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12778_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12778_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12778_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12778_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12778_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12778">0</div>
+    <input type="hidden" value="4" id="DC12778">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12779" id="div12779" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12779&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12779_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12779_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12779_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12779_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12779_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12779_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12779_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12779_4" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12779">0</div>
+    <input type="hidden" value="4" id="DC12779">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12780" id="div12780" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12780&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12780_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12780_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12780_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12780_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12780_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12780_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12780_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12780_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12780">0</div>
+    <input type="hidden" value="4" id="DC12780">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12781" id="div12781" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12781&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12781_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12781_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12781_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12781_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12781_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12781_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12781_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12781_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12781">0</div>
+    <input type="hidden" value="4" id="DC12781">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12782" id="div12782" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12782&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C6</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12782_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12782_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12782_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12782_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12782_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12782_3" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12782_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12782_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12782">0</div>
+    <input type="hidden" value="4" id="DC12782">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12783" id="div12783" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12783&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C7</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12783_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12783_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12783_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12783_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12783_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12783_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12783_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12783_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12783">0</div>
+    <input type="hidden" value="4" id="DC12783">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12784" id="div12784" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12784&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C8</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12784_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12784_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12784_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12784_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12784_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12784_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12784_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12784_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12784">0</div>
+    <input type="hidden" value="4" id="DC12784">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12785" id="div12785" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12785&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C9</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12785_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12785_1" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12785_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12785_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12785_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12785_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12785_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12785_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12785">0</div>
+    <input type="hidden" value="4" id="DC12785">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12786" id="div12786" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12786&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C10</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12786_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12786_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12786_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12786_2" value="1">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12786_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12786_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12786_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12786_4" value="0">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12786">0</div>
+    <input type="hidden" value="4" id="DC12786">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>

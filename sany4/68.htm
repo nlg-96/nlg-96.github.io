@@ -1,0 +1,554 @@
+
+
+
+
+<ion-view view-title="{{localStorage.sany4Title}}"><ion-nav-title>{{localStorage.sany4Title}}</ion-nav-title><ion-content style=' font-size:{{localStorage.fontSize}}pt; font-family: "Times New Roman","serif" '  padding="true" class="has-header"><body bgcolor="LightSkyBlue" style="cursor: default;">
+
+
+
+
+
+
+
+
+<form id="thi" name="thi" method="GET">
+<input type="hidden" name="SoBaoDanh" id="SoBaoDanh" value="20170418_92960">
+<input type="hidden" name="idDeThi" id="idDeThi" value="1106">
+<input type="hidden" name="DiemDeThi" id="DiemDeThi" value="/">
+<input type="hidden" name="ThoiGian" id="ThoiGian" value="120">
+
+
+
+<div style="position: fixed; top:8px;display:none; width:20%; right:10px; background-color:#FFFFAA;font-family:Arial, Helvetica, sans-serif;font-size:18px;">
+<p align="center">
+Thời gian còn lại<br><font color="blue"><b><input type="hidden" name="Clock" id="Clock" value="1492453189546"> <span id="Clock_1"> 1:59:57</span>
+</b></font><br>
+<span id="newborn"><img src="sany4/68_files/newborn.gif" height="60" border="0"></span>
+<br>
+Số báo danh<br><font color="blue"><b>20170418_92960</b></font> 
+<br>
+<span id="button1">
+<img src="sany4/68_files/submit_icon1.jpg" height="50" width="160" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="JavaScript:if (TG&gt;10) if(confirm(&#39;Are you sure you want to STOP ?&#39;)){
+ //document.getElementById(&#39;thi&#39;).submit(); 
+ stopAllRadio();clearTimeout(loop1);
+ document.getElementById(&#39;newborn&#39;).innerHTML=strimg;
+ document.getElementById(&#39;button1&#39;).innerHTML=stopimg;
+ return true;} 
+ else return false;">
+ </span>
+ </p>
+</div>
+
+
+<p>
+<table align="left" border="0" width="100%" cellpadding="4" cellspacing="0" style='font-family:"Times New Roman","serif";font-size:{{localStorage.fontSize}}pt; color:#000033;'>
+<tbody><tr>
+<td align="center" colspan="2">
+
+</td>
+</tr>
+<tr>
+<td width="5%" valign="top"><b>&nbsp;
+</b></td><td align="center"><b><span class="style1" style="font-size:{{localStorage.fontSize*1+4}}pt">Câu hỏi: {{localStorage.sany4Title}}</span>
+    </b></td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12920" id="anchor12920"></a>
+	<b>1</b>
+    </td><td>
+    <input type="hidden" name="T12920" value="1">
+    TÌNH HUỐNG 1: NGOẠI TRÚ HAY NỘI TRÚ<br>
+Bà A. 30 tuổi, PARA 0000, tuổi thai ngày hôm nay là 37 tuần 0/7.<br>
+Hôm nay, bà đi khám thai định kỳ.<br>
+Tại phòng khám thai, người ta đo huyết áp cho bà A., ghi nhận huyết áp 150/95 mmHg.<br>
+Ngoài ra bà A. không có bất cứ triệu chứng cơ năng nào khác.<br>
+Do có tăng huyết áp, người ta đã cho bà A. uống 250 mg alpha methyldopa, rồi cho bà A. lưu tại cấp cứu.<br>
+Khi huyết áp tạm ổn định, người ta chuyển bà A. lên nhập viện ở trại Sản bệnh.<br>
+Khám tại trại sản bệnh ghi nhận M = 80 lần/phút, huyết áp 145/90 mmHg, thở 16 lần/phút, nhiệt độ 37 độ C, phù nhẹ chi dưới.<br>
+Bụng mềm, BCTC 36 cm, không có cơn co tử cung, ngôi đầu cao, TT 140 lần/phút.<br>
+CTC đóng, các màng ối chưa vỡ.<br>
+Xét nghiệm chức năng gan thận đều bình thường.<br>
+Huyết đồ đếm tiểu cầu = 130.000 / µL.<br>
+Đạm niệu = 0.5 g/L.<br>
+Siêu âm ghi nhận sinh trắc thai ở 50th percentile, AFI = 8.<br>
+Non-stress Test bình thường.<br>
+Bạn sẽ làm gì cho bà A. hôm nay?<br>
+Chọn 3 hành động thích hợp
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12920" id="C12920" value="1" ng-click="checkKetQua($event);">
+         Cho xuất viện, hẹn tái khám ngoại trú
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12920" id="C12920" value="2" ng-click="checkKetQua($event);">
+         Cho nhập viện và tiến hành điều trị
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12920" id="C12920" value="3" ng-click="checkKetQua($event);">
+         Duy trì hoặc đổi loại thuốc chống tăng huyết áp
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12920" id="C12920" value="4" ng-click="checkKetQua($event);">
+         Bắt đầu dùng magnesium sulfate
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12920" id="C12920" value="5" ng-click="checkKetQua($event);">
+         Lên kế hoạch chấm dứt thai kỳ sớm
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12920" id="C12920" value="6" ng-click="checkKetQua($event);">
+         Tư vấn về tình trạng bệnh lý
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12920" id="C12920" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12921" id="anchor12921"></a>
+	<b>2</b>
+    </td><td>
+    <input type="hidden" name="T12921" value="1">
+    TÌNH HUỐNG 2: TẠI TRUNG TÂM Y TẾ HUYỆN<br>
+Bạn đang ở trung tâm y tế huyện.<br>
+Bà B., PARA 1001, đang mang thai 34 tuần 0/7, đến khám vì đau hạ sườn phải, nôn.<br>
+Từ đêm qua đến nay đi tiểu ít, nước tiểu có màu đỏ nâu.<br>
+Khám ghi nhận M = 92 lần/phút, huyết áp 140/90 mmHg, phù chi và mặt.<br>
+37 độ C, thở 16 lần/phút, phản xạ gân xương (+).<br>
+Bụng mềm, BCTC 26 cm, không có cơn co tử cung, ngôi đầu cao, TT 140 lần/phút.<br>
+Khám âm đạo cổ tử cung đóng, dài, chúc sau. Các màng ối chưa vỡ.<br>
+Huyết đồ: Hematocrite 42%, tiểu cầu 80000 / µL.<br>
+Dip-stick 10 thông số ghi nhận có protein niệu 3+, kèm huyết niệu.<br> 
+Bạn sẽ làm gì cho bà B.?<br>
+Chọn 2 hành động phải thực hiện ngay 
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12921" id="C12921" value="1" ng-click="checkKetQua($event);">
+         Theo dõi ngoại trú
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12921" id="C12921" value="2" ng-click="checkKetQua($event);">
+         Lưu bệnh tại trung tâm y tế huyện
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12921" id="C12921" value="3" ng-click="checkKetQua($event);">
+         Chuyển bệnh viện tuyến trên
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12921" id="C12921" value="4" ng-click="checkKetQua($event);">
+         Corticosteroid liệu pháp
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12921" id="C12921" value="5" ng-click="checkKetQua($event);">
+         Siêu âm sinh trắc kết hợp với thực hiện modified BPP
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12921" id="C12921" value="6" ng-click="checkKetQua($event);">
+         Magnesium sulfate
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12921" id="C12921" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12922" id="anchor12922"></a>
+	<b>3</b>
+    </td><td>
+    <input type="hidden" name="T12922" value="1">
+    TÌNH HUỐNG 3: LÀM GÌ KHI TUỔI THAI Ở 35 TUẦN VÔ KINH?<br>
+Bà C. 34 tuổi, PARA 1001, đang mang thai ở tuần thứ 35, tuổi thai chính xác, đến khám vì nhức đầu mới xuất hiện vài ngày nay.<br>
+Bà cũng cho biết bị phù nhẹ ở chân từ khoảng 2 tuần nay.<br>
+Thai kỳ lần trước không ghi nhận bất thường, kết thúc bằng sanh thường, con 3.2 kg.<br>
+Tiền sử nội, ngoại khoa không ghi nhận gì lạ.<br>
+Khám lâm sàng M 92 lần/phút, huyết áp 170/100 mmHg, 37 độ C, thở 16 lần/phút, phản xạ gân xương (+++).<br>
+Bụng mềm, BCTC 30 cm, không có cơn co tử cung, ngôi đầu cao, TT 140 lần/phút.<br>
+Khám âm đạo CTC đóng, dài, chúc sau. Các màng ối chưa vỡ.<br>
+Dip-stick dương tính 3+ với đạm, âm tính với glucose.<br>
+Chưa thực hiện đạm niệu 24 giờ.<br>
+Siêu âm sinh trắc ở 25th percentile. AFI = 8.<br>
+Non-stress test bình thường.<br>
+Sinh hóa máu cho thấy acid uric tăng nhẹ, trong khi đó men gan, BUN, creatinin và huyết đồ còn ở trong giới hạn bình thường, ngoại trừ hematocrite = 41%.<br>
+Bạn sẽ ưu tiên thực hiện 3 hành động nào cho bà C.?<br>
+Hãy xếp tất cả các can thiệp trên theo thứ tự ưu tiên. Lý giải các hành động mà bạn không xem là ưu tiên.<br>
+Chọn 3 hành động ưu tiên nhất
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12922" id="C12922" value="1" ng-click="checkKetQua($event);">
+         Velocimetry Doppler 
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12922" id="C12922" value="2" ng-click="checkKetQua($event);">
+         Contraction Stress Test 
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12922" id="C12922" value="3" ng-click="checkKetQua($event);">
+         Magnesium sulfate
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12922" id="C12922" value="4" ng-click="checkKetQua($event);">
+         Chấm dứt thai kỳ ngay khi đủ điều kiện
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12922" id="C12922" value="5" ng-click="checkKetQua($event);">
+         Chất ức chế kênh Ca++
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12922" id="C12922" value="6" ng-click="checkKetQua($event);">
+         Corticosteroids liệu pháp
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12922" id="C12922" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12923" id="anchor12923"></a>
+	<b>4</b>
+    </td><td>
+    <input type="hidden" name="T12923" value="1">
+    TÌNH HUỐNG 4: HÔN MÊ<br>
+Bà X. (?) tuổi (?), được người đi đường đưa đến bệnh viện sản bằng xe taxi, trong tình trạng hôn mê.<br>
+Tại phòng cấp cứu, bạn ghi nhận bà  ta đang có thai, bề cao tử cung 28 cm, không có cơn co tử cung.<br>
+Tim thai nghe bằng Doppler 100 lần/phút. Cổ tử cung đóng.<br>
+Mạch 100 lần/phút, huyết áp 150/100 mmHg, phù chân, tay và mặt.<br>
+Thông tiểu thấy có 100 mL nước tiểu màu nâu sậm.<br>
+Bạn phải làm gì ngay lúc này?<br>
+Chọn hai can thiệp hay hành động có độ ưu tiên và bắt buộc cao nhất. Hãy xác định nội dung của can thiệp thứ ba, sau can thiệp hay hành động mà bạn đã chọn 
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12923" id="C12923" value="1" ng-click="checkKetQua($event);">
+         Thuốc chống tăng huyết áp
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12923" id="C12923" value="2" ng-click="checkKetQua($event);">
+         Magnesium sulfate
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12923" id="C12923" value="3" ng-click="checkKetQua($event);">
+         Corticosteroid liệu pháp
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12923" id="C12923" value="4" ng-click="checkKetQua($event);">
+         Thực hiện EFM
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12923" id="C12923" value="5" ng-click="checkKetQua($event);">
+         Tìm nguyên nhân của hôn mê
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12923" id="C12923" value="6" ng-click="checkKetQua($event);">
+         Chấm dứt thai kỳ 
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12923" id="C12923" value="7" ng-click="checkKetQua($event);">
+          
+<br><br>    </td></tr><tr>
+    <td align="center" valign="top">
+    <a name="anchor12924" id="anchor12924"></a>
+	<b>5</b>
+    </td><td>
+    <input type="hidden" name="T12924" value="1">
+    TÌNH HUỐNG 5: THAI KỲ NGUY CƠ CAO CÓ TIỀN SẢN GIẬT<br>
+Bà E., 28 tuổi, PARA 0101, đến khám thai. Hiện tại tuổi thai là 16 tuần 0/7 vô kinh.<br>
+Ở lần mang thai trước, bà E. bị tiền sản giật xuất hiện ở thời điểm tuổi thai là 32 tuần, và buộc phải tiến hành mổ sanh ở thời điểm 34 tuần 0/7 vì tiền sản giật có dấu hiệu nặng.<br>
+Khám ghi nhận M 84 lần/phút, huyết áp 130/80 mmHg, tim thai 160 nhịp/phút, thở 16 nhịp/phút.<br>
+Tử cung trên vệ 14 cm, không đau bụng. Cổ tử cung đóng.<br>
+Combined test thực hiện vào một tháng trước đó cho thấy nguy cơ tính toán với lệch bội là thấp.<br>
+Tuy nhiên, ghi nhận một nồng độ thấp của free β-hCG, &lt; 0.2 MoM.<br>
+Nếu chỉ chọn một, bạn sẽ làm gì thêm cho bà E. ?<br>
+Chọn một hành động
+<br>&nbsp;&nbsp;&nbsp;<b>A</b>.  
+        <input type="radio" name="C12924" id="C12924" value="1" ng-click="checkKetQua($event);">
+         Thực hiện thêm triple test. Dùng kết quả Triple để thêm thông tin đánh giá nguy cơ của tiền sản giật
+<br>&nbsp;&nbsp;&nbsp;<b>B</b>.  
+        <input type="radio" name="C12924" id="C12924" value="2" ng-click="checkKetQua($event);">
+         Thực hiện velocimetry Doppler khảo sát phổ động mạch tử cung để đánh giá nguy cơ của tiền sản giật
+<br>&nbsp;&nbsp;&nbsp;<b>C</b>.  
+        <input type="radio" name="C12924" id="C12924" value="3" ng-click="checkKetQua($event);">
+         Thực hiện khảo sát SFlt-1 để đánh giá nguy cơ của tiền sản giật 
+<br>&nbsp;&nbsp;&nbsp;<b>D</b>.  
+        <input type="radio" name="C12924" id="C12924" value="4" ng-click="checkKetQua($event);">
+         Cho bà E. uống aspirin hàng ngày
+<br>&nbsp;&nbsp;&nbsp;<b>E</b>.  
+        <input type="radio" name="C12924" id="C12924" value="5" ng-click="checkKetQua($event);">
+         Cho bà E. bổ sung calcium hàng ngày
+<br>&nbsp;&nbsp;&nbsp;<b>F</b>.  
+        <input type="radio" name="C12924" id="C12924" value="6" ng-click="checkKetQua($event);">
+         Cho bà E. dùng alpha methyldopa
+<br>&nbsp;&nbsp;&nbsp;<b>G</b>.  
+        <input type="radio" name="C12924" id="C12924" value="7" ng-click="checkKetQua($event);">
+          
+<br><br></td></tr></tbody></table>
+
+
+</p></form>
+
+
+<div style="position:fixed; overflow-y: scroll;right:10px; top: 250px; width:20%; height: 100%;display:none
+; bottom:-200px; 265px; background-color:#FFFFFF">
+
+<table border="1" style="font-family:Arial, Helvetica, sans-serif; font-size:20px" cellpadding="1" cellspacing="0" width="95%" align="center" bgcolor="lightgray">
+<tbody><tr bgcolor="lightgray" height="40"><td colspan="6" align="center"><font color="darkblue"><b>IF AT</b></font></td></tr>
+    <tr height="22">
+    <td align="center">
+    <div name="div12920" id="div12920" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12920&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C1</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12920_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12920_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12920_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12920_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12920_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12920_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12920_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12920_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12920">0</div>
+    <input type="hidden" value="4" id="DC12920">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12921" id="div12921" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12921&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C2</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12921_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12921_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12921_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12921_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12921_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12921_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12921_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12921_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12921">0</div>
+    <input type="hidden" value="4" id="DC12921">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12922" id="div12922" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12922&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C3</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12922_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12922_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12922_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12922_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12922_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12922_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12922_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12922_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12922">0</div>
+    <input type="hidden" value="4" id="DC12922">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12923" id="div12923" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12923&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C4</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12923_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12923_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12923_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12923_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12923_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12923_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12923_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12923_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12923">0</div>
+    <input type="hidden" value="4" id="DC12923">
+    </td>
+    </tr>
+        <tr height="22">
+    <td align="center">
+    <div name="div12924" id="div12924" style="background-color:#DDDDDD" onclick="document.location.hash = &#39;anchor12924&#39;;" onmouseover="this.style.cursor=&#39;hand&#39;"><b>C5</b></div></td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_1">
+	<b>A</b>
+    </div>
+    <input type="hidden" id="D12924_1" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_2">
+	<b>B</b>
+    </div>
+    <input type="hidden" id="D12924_2" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_3">
+	<b>C</b>
+    </div>
+    <input type="hidden" id="D12924_3" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_4">
+	<b>D</b>
+    </div>
+    <input type="hidden" id="D12924_4" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_5">
+	<b>E</b>
+    </div>
+    <input type="hidden" id="D12924_5" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_6">
+	<b>F</b>
+    </div>
+    <input type="hidden" id="D12924_6" value="0">
+       
+    </td>
+        <td align="center" bgcolor="#BBBBBB" width="30">
+	<div id="TL12924_7">
+	<b>G</b>
+    </div>
+    <input type="hidden" id="D12924_7" value="1">
+       
+    </td>
+        <td with="20" align="center"><div id="KQ12924">0</div>
+    <input type="hidden" value="4" id="DC12924">
+    </td>
+    </tr>
+    
+<tr><td align="center" colspan="6"><input type="hidden" value="0" id="sumscore">
+<span id="total"><b>SCORE: 0</b></span>
+</td></tr>
+</tbody></table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+<div class="ads"></div></ion-content></ion-view>
