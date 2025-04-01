@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRAT - Kiểm tra Trắc nghiệm</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    function checkAnswers() {
+      const answers = {
+        1: 'B',
+        2: 'A',
+        3: 'C',
+        4: 'B',
+        5: 'A',
+        6: 'B',
+        7: 'C',
+        8: 'C',
+        9: 'B',
+        10: 'C',
+        11: 'A',
+        12: 'D',
+        13: 'B',
+        14: 'C',
+        15: 'D',
+        16: 'C',
+        17: 'B',
+        18: 'B',
+        19: 'C'
+      };
+
+      let score = 0;
+      
+      // Kiểm tra đáp án người dùng
+      for (let i = 1; i <= 19; i++) {
+        const selectedAnswer = document.querySelector(`input[name="question${i}"]:checked`);
+        if (selectedAnswer && selectedAnswer.value === answers[i]) {
+          score++;
+        }
+      }
+      
+      alert(`Điểm của bạn là: ${score}/19`);
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="../index.html" class="home-button">OBGYN</a></li>
+        <li><a href="../sany4/tbl4.html">TBL 4</a></li>
+        <li><a href="../sany6/tbl6.html">TBL 6</a></li>
+        <li><a href="irat.html">IRAT</a></li>
+        <li><a href="../case/cls.html">Case lâm sàng</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>Kiểm tra IRAT</h1>
+      
+      <form>
+        <!-- Câu hỏi 1 -->
+        <p><strong>Câu hỏi 1:</strong> Trong một điều kiện xác định, một phương pháp tránh thai được xếp vào loại 2 có đồng nghĩa với việc nó bị chống chỉ định tương đối trong điều kiện đó hay không?</p>
+        <div>
+          <input type="radio" id="q1A" name="question1" value="A">
+          <label for="q1A">A. Đúng. Hai thuật ngữ này là có ý nghĩa tương tự nhau về mặt thực hành lựa chọn một phương pháp tránh thai</label>
+        </div>
+        <div>
+          <input type="radio" id="q1B" name="question1" value="B">
+          <label for="q1B">B. Sai. Xếp loại 2 đồng nghĩa với việc vẫn dùng được, nhưng không phải là lựa chọn ưu tiên trong điều kiện đó</label>
+        </div>
+        <div>
+          <input type="radio" id="q1C" name="question1" value="C">
+          <label for="q1C">C. Sai. Xếp loại 2 đồng nghĩa với việc vẫn dùng được, do các nguy cơ có liên quan không phải là hằng định</label>
+        </div>
+        <div>
+          <input type="radio" id="q1D" name="question1" value="D">
+          <label for="q1D">D. Sai. Xếp loại 2 đồng nghĩa với việc nó không thích hợp, và chỉ được phép dùng trong tình huống hãn hữu</label>
+        </div>
+
+        <!-- Các câu hỏi tiếp theo theo cấu trúc tương tự -->
+        <p><strong>Câu hỏi 2:</strong> Nếu đã chọn được phương pháp, thì chọn phương tiện tránh thai cụ thể (thương hiệu, loại hoạt chất, đặc điểm cấu tạo…) sẽ phải ưu tiên căn cứ vào điều gì?</p>
+        <div>
+          <input type="radio" id="q2A" name="question2" value="A">
+          <label for="q2A">A. Đặc điểm thể chất của cá thể</label>
+        </div>
+        <div>
+          <input type="radio" id="q2B" name="question2" value="B">
+          <label for="q2B">B. Tính sẵn có của phương tiện</label>
+        </div>
+        <div>
+          <input type="radio" id="q2C" name="question2" value="C">
+          <label for="q2C">C. Thành giá của phương tiện đó</label>
+        </div>
+        <div>
+          <input type="radio" id="q2D" name="question2" value="D">
+          <label for="q2D">D. Uy tín của thương hiệu cụ thể đó</label>
+        </div>
+
+        <!-- Tiếp tục tạo các câu hỏi từ 3 đến 19 -->
+
+        <button type="button" onclick="checkAnswers()">Kiểm tra đáp án</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>
