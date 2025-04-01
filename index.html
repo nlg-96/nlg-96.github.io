@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TBL Sản Phụ Khoa</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang học</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Sidebar với nút ☰ -->
-  <div class="sidebar">
-    <button id="toggleSidebarBtn" class="toggle-sidebar-btn">☰</button>
-    <ul>
-      <li><a href="../index.html" class="home-button">OBGYN</a></li>
-      <li class="toggle-menu">
-        <a href="#">TBL 4</a>
-        <ul class="submenu">
-          <li><a href="../sany4/1.htm">Bài 1</a></li>
-          <li><a href="../sany4/2.htm">Bài 2</a></li>
-          <li><a href="../sany4/3.htm">Bài 3</a></li>
-        </ul>
-      </li>
-      <li class="toggle-menu">
-        <a href="#">TBL 6</a>
-        <ul class="submenu">
-          <li><a href="../sany6/1.htm">Bài 1</a></li>
-          <li><a href="../sany6/2.htm">Bài 2</a></li>
-          <li><a href="../sany6/3.htm">Bài 3</a></li>
-        </ul>
-      </li>
-      <li class="toggle-menu">
-        <a href="#">IRAT</a>
-        <ul class="submenu">
-          <li><a href="../irat/1.htm">Bài 1</a></li>
-          <li><a href="../irat/2.htm">Bài 2</a></li>
-          <li><a href="../irat/3.htm">Bài 3</a></li>
-        </ul>
-      </li>
-      <li class="toggle-menu">
-        <a href="#">Case lâm sàng</a>
-        <ul class="submenu">
-          <li><a href="../case/1.htm">Bài 1</a></li>
-          <li><a href="../case/2.htm">Bài 2</a></li>
-          <li><a href="../case/3.htm">Bài 3</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <!-- Nút thu/ mở sidebar -->
+    <button class="toggle-btn" id="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
 
-  <!-- Nội dung chính -->
-  <div class="content">
-    <p>Chào mừng bạn đến với Task-based Learning Sản Phụ Khoa!</p>
-  </div>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fab fa-github"></i>
+            <span>TBL Sản Phụ Khoa</span>
+        </div>
+        <ul class="menu">
+            <li class="dropdown">
+                <span>TBL 4</span>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadContent('sany4/1.htm')">Bài 1</a></li>
+                    <li><a href="#" onclick="loadContent('sany4/2.htm')">Bài 2</a></li>
+                    <li><a href="#" onclick="loadContent('sany4/3.htm')">Bài 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span>TBL 6</span>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadContent('sany6/1.htm')">Bài 1</a></li>
+                    <li><a href="#" onclick="loadContent('sany6/2.htm')">Bài 2</a></li>
+                    <li><a href="#" onclick="loadContent('sany6/3.htm')">Bài 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span>IRAT</span>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadContent('irat/1.htm')">Bài 1</a></li>
+                    <li><a href="#" onclick="loadContent('irat/2.htm')">Bài 2</a></li>
+                    <li><a href="#" onclick="loadContent('irat/3.htm')">Bài 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span>Case lâm sàng</span>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadContent('case/1.htm')">Bài 1</a></li>
+                    <li><a href="#" onclick="loadContent('case/2.htm')">Bài 2</a></li>
+                    <li><a href="#" onclick="loadContent('case/3.htm')">Bài 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-  <!-- Nút popup Facebook -->
-  <div class="fb-popup">
-    <a href="https://www.facebook.com/" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" class="fb-icon">
-    </a>
-  </div>
+    <div class="content" id="content">
+        <h1>Chào mừng đến với trang học!</h1>
+        <p>Chọn bài học từ thanh bên để bắt đầu học.</p>
+    </div>
 
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
