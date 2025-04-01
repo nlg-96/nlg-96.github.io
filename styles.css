@@ -1,111 +1,144 @@
-/* Cho toàn bộ trang */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Đảm bảo trang có chiều cao đầy đủ */
-    overflow-y: auto; /* Cho phép cuộn toàn bộ trang khi cần */
-    font-family: Arial, sans-serif;
-    display: flex;
+/* Kiểu dáng cho Sidebar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Sidebar */
+body {
+  display: flex;
+  height: 100vh;
+  background: #f4f4f4;
+  overflow-x: hidden; /* Không cho phép cuộn ngang */
+}
+
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background: #24292e;
-    color: white;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung sidebar quá dài */
-    transition: width 0.3s ease;
+  width: 250px;
+  background: #2c3e50;
+  padding-top: 68px; /* Thêm khoảng cách từ top của trang */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transition: width 0.3s ease-in-out;
 }
 
-.sidebar.collapsed {
-    width: 50px; /* Khi thu sidebar lại */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
 }
 
-.sidebar .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.sidebar ul li {
+  position: relative; /* Để dễ dàng kiểm soát vị trí của các menu con */
 }
 
-.sidebar .logo i {
-    font-size: 30px;
-    margin-right: 10px;
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  display: block;
+  padding: 15px;
+  background: #2c3e50;
+  transition: background 0.3s ease-in-out;
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
+.sidebar ul li:hover a {
+  background: #1f2c3b;
 }
 
-.menu li {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
+/* Kiểu dáng cho menu con */
+.sidebar ul li .submenu {
+  display: none; /* Ban đầu ẩn các menu con */
+  list-style-type: none;
+  padding-left: 0px; /* Thụt lề để dễ nhìn */
 }
 
-.menu li:hover {
-    background: #444d56;
+.sidebar ul li .submenu li a {
+  background: #34495e;
+  padding: 10px;
 }
 
-.submenu {
-    list-style: none;
-    padding-left: 20px;
-    display: none;
+.sidebar ul li .submenu li a:hover {
+  background: #1f2c3b;
 }
 
-.menu li.open .submenu {
-    display: block;
+/* Nút toggle sidebar */
+.toggle-sidebar-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
 }
 
-.submenu li {
-    padding: 8px;
-    cursor: pointer;
+.toggle-sidebar-btn:hover {
+  background: #1f2c3b;
+  color: #ffffff;
 }
 
-.submenu li a {
-    color: white;
-    text-decoration: none;
+.toggle-sidebar-btn:focus {
+  outline: none;
 }
 
-.submenu li:hover {
-    background: #555;
+/* Khi sidebar bị ẩn, thu nhỏ lại và không hiển thị các mục bên trong */
+.sidebar.hidden {
+  width: 68px;
 }
 
-/* Nội dung chính */
+.sidebar.hidden ul {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .content {
-    margin-left: 270px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-    overflow-y: auto; /* Cho phép cuộn nội dung chính nếu dài */
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
 }
 
-/* Khi sidebar bị thu lại */
-.sidebar.collapsed ~ .content {
-    margin-left: 70px; /* Khi thu sidebar lại */
+.content.hidden {
+  margin-left: 50px;
 }
 
-.toggle-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: #24292e;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
+/* Nút popup Facebook */
+.fb-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.toggle-btn:hover {
-    background: #444d56;
+.fb-popup a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #3b5998;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.fb-popup .fb-icon {
+  width: 40px;
+  height: 40px;
+}
+/* Thêm thanh cuộn dọc khi nội dung dài */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  padding-top: 68px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto; 
+  transition: width 0.3s ease-in-out;
 }
