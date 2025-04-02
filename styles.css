@@ -11,7 +11,7 @@ body {
   height: 100vh;
   background: #f4f4f4;
   overflow-x: hidden; /* Không cho phép cuộn ngang */
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .sidebar {
