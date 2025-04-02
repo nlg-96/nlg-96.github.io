@@ -102,7 +102,6 @@ body {
   margin-left: 250px;
   padding: 20px;
   transition: margin-left 0.3s ease-in-out;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .content.hidden {
