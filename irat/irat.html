@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh Sách Bài Test</title>
+    <title>Danh Sách Bài Học</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,55 +11,35 @@
             line-height: 1.6;
         }
         h2 {
-            text-align: left; /* Căn lề trái cho tiêu đề */
+            text-align: left;
         }
-        .test-list {
+        .lesson-list {
             list-style-type: none;
             padding: 0;
-            margin-left: 20px; /* Căn lề trái cho danh sách */
         }
-        .test-list li {
-            margin-bottom: 15px;
+        .lesson-list li {
+            margin-bottom: 10px;
         }
-        button {
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-left: 10px; /* Căn nút về phía trái */
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
         }
-        button:hover {
-            background-color: #0056b3;
+        a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-<h2>Danh Sách Bài Test</h2>
+<h2>Danh Sách Bài IRAT</h2>
 
-<ul class="test-list">
-    <li>
-        Bài 1: U Xơ Tử Cung
-        <button onclick="openTest(1)">Làm Test</button>
-    </li>
-    <li>
-        Bài 2: Ung Thư Cổ Tử Cung
-        <button onclick="openTest(2)">Làm Test</button>
-    </li>
-    <li>
-        Bài 3: Viêm Cổ Tử Cung
-        <button onclick="openTest(3)">Làm Test</button>
-    </li>
-    <!-- Thêm các bài khác ở đây nếu cần -->
+<ul class="lesson-list">
+    <li><a href="1.htm" target="_blank">Bài 1: Giới thiệu về U Xơ Tử Cung</a></li>
+    <li><a href="lesson2.html" target="_blank">Bài 2: Phương pháp điều trị U Xơ Tử Cung</a></li>
+    <li><a href="lesson3.html" target="_blank">Bài 3: Phẫu thuật U Xơ Tử Cung</a></li>
+    <!-- Thêm các bài học khác ở đây -->
 </ul>
-
-<script>
-    function openTest(testNumber) {
-        // Mở tab mới với file tương ứng
-        window.open(testNumber + ".htm", "_blank");
-    }
-</script>
 
 </body>
 </html>
