@@ -37,7 +37,11 @@
 <body>
 
 <h2>Bài Test U Xơ Tử Cung</h2>
-<form id="quizForm"></form>
+
+<!-- Phần tử chứa bài test -->
+<div id="content"></div>
+
+<!-- Nút nộp bài -->
 <button onclick="submitQuiz()">Nộp bài</button>
 
 <script>
@@ -72,8 +76,8 @@
 
     // Hiển thị câu hỏi lên trang
     function loadQuiz() {
-        const quizForm = document.getElementById("quizForm");
-        quizForm.innerHTML = ""; // Xóa nội dung cũ
+        const contentDiv = document.getElementById("content");
+        contentDiv.innerHTML = ""; // Xóa nội dung cũ
 
         questions.forEach((q, index) => {
             let shuffledAnswers = shuffleArray([...q.answers]); // Xáo trộn đáp án
@@ -97,7 +101,7 @@
             });
 
             questionHTML += `</ul>`;
-            quizForm.innerHTML += questionHTML;
+            contentDiv.innerHTML += questionHTML;
         });
     }
 
