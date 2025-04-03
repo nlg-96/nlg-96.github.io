@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Test U Xơ Tử Cung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+        .answers li {
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Bài Test U Xơ Tử Cung</h2>
+<form id="quizForm"></form>
+<button onclick="submitQuiz()">Nộp bài</button>
+
+<script>
+    // Danh sách câu hỏi
+    const questions = [
+        {
+            question: "U xơ-cơ tử cung là một khối u lệ thuộc steroid sinh dục. Khái niệm này phải được hiểu ra sao?",
+            answers: [
+                "Estrogen là điều kiện cần thiết cho sự phát triển của khối u, thông qua thụ thể estrogen",
+                "Progesterone là yếu tố chủ lực thúc đẩy sự phát triển của khối u, thông qua thụ thể progesterone",
+                "Khối u sẽ thoái triển khi không có estrogen nội sinh hay khi thụ thể progesterone bị ức chế bằng thuốc",
+                "Cả 3 mệnh đề trên cùng là các lý giải chính xác về tình trạng lệ thuộc steroid sinh dục của u xơ-cơ tử cung"
+            ],
+            correct: 3
+        },
+        {
+            question: "Khái niệm về tiềm năng ác tính rất thấp của u xơ tử cung được diễn giải ra sao trong thực hành?",
+            answers: [
+                "Không cần thiết phải chỉ định phẫu thuật với mục đích duy nhất là khảo sát mô bệnh học",
+                "U xơ-cơ tử cung có kết quả bệnh học là STUMP có thể được xem là một khối u lành tính",
+                "Không nhất thiết phải thực hiện khảo sát mô bệnh học bệnh phẩm mổ u xơ-cơ tử cung",
+                "Hiện đã đủ bằng chứng để xác định leiomyosarcoma là bệnh lý độc lập với u xơ-cơ tử cung"
+            ],
+            correct: 0
+        }
+    ];
+
+    // Hàm xáo trộn mảng
+    function shuffleArray(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    // Hiển thị câu hỏi lên trang
+    function loadQuiz() {
+        const quizForm = document.getElementById("quizForm");
+        quizForm.innerHTML = ""; // Xóa nội dung cũ
+
+        questions.forEach((q, index) => {
+            let shuffledAnswers = shuffleArray([...q.answers]); // Xáo trộn đáp án
+            let correctIndex = shuffledAnswers.indexOf(q.answers[q.correct]); // Cập nhật chỉ số đúng sau khi xáo trộn
+
+            q.correct = correctIndex; // Lưu chỉ số đúng mới vào câu hỏi
+
+            let questionHTML = `
+                <div class="question">${index + 1}. ${q.question}</div>
+                <ul class="answers">
+            `;
+            shuffledAnswers.forEach((answer, i) => {
+                questionHTML += `
+                    <li>
+                        <label>
+                            <input type="radio" name="q${index}" value="${i}">
+                            ${answer}
+                        </label>
+                    </li>
+                `;
+            });
+
+            questionHTML += `</ul>`;
+            quizForm.innerHTML += questionHTML;
+        });
+    }
+
+    // Nộp bài và hiển thị kết quả
+    function submitQuiz() {
+        let score = 0;
+        let wrongAnswers = [];
+        
+        questions.forEach((q, index) => {
+            const selected = document.querySelector(`input[name="q${index}"]:checked`);
+            if (selected) {
+                if (parseInt(selected.value) === q.correct) {
+                    score++;
+                } else {
+                    wrongAnswers.push(`${index + 1}`);
+                }
+            } else {
+                wrongAnswers.push(`${index + 1}`);
+            }
+        });
+
+        let message = `Bạn trả lời đúng ${score}/${questions.length} câu.\n`;
+        if (wrongAnswers.length > 0) {
+            message += `Các câu sai là: ${wrongAnswers.join(", ")}.\n`;
+        } else {
+            message += `Xuất sắc! Bạn đã trả lời đúng tất cả.\n`;
+        }
+        
+        if (confirm(message + "\nBạn có muốn làm lại bài test?")) {
+            loadQuiz(); // Tải lại bài test với thứ tự đáp án mới
+        }
+    }
+
+    // Tải bài test khi trang mở
+    loadQuiz();
+</script>
+
+</body>
+</html>
